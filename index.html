@@ -86,28 +86,30 @@
             text-transform: uppercase;
         }
 
-        /* ГЛАВНЫЙ ТЕКСТ — БОЛЬШИЕ ПРОБЕЛЫ МЕЖДУ СЛОВАМИ */
+        /* ДЕСКТОП */
         .main-text {
-            font-size: 0.7rem;
+            font-size: 0.85rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.7;
             color: #000000;
             margin-bottom: 6rem;
-            word-spacing: 0.2em;
         }
 
-        .main-text p {
-            margin-bottom: 2rem;
+        /* ВТОРОЙ И ТРЕТИЙ АБЗАЦЫ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ С БОЛЬШИМИ ПРОБЕЛАМИ */
+        .main-text p:not(:first-child) {
             text-align: justify;
             text-justify: inter-word;
             word-break: normal;
-            word-spacing: 0.2em;
+            word-spacing: 0.4em;
+            margin-bottom: 2rem;
         }
 
+        /* ПЕРВЫЙ АБЗАЦ — ПО ЦЕНТРУ */
         .main-text p:first-child {
-            text-align: justify;
-            text-justify: inter-word;
+            text-align: center;
+            word-spacing: normal;
+            margin-bottom: 2rem;
         }
 
         .main-text p:last-child {
@@ -125,7 +127,7 @@
         }
 
         .day-badge {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
@@ -135,7 +137,7 @@
         }
 
         .day-title {
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 600;
             letter-spacing: 0.04em;
             margin-bottom: 2rem;
@@ -150,7 +152,7 @@
         }
 
         .feature-list li {
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.7;
@@ -159,7 +161,7 @@
             text-align: justify;
             text-justify: inter-word;
             word-break: normal;
-            word-spacing: 0.15em;
+            word-spacing: 0.3em;
         }
 
         .feature-list li:last-child {
@@ -178,14 +180,14 @@
 
         .price-value {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 800;
             letter-spacing: 0.02em;
             color: #000000;
         }
 
         .price-hint {
-            font-size: 0.5rem;
+            font-size: 0.6rem;
             font-weight: 500;
             letter-spacing: 0.05em;
             color: #000000;
@@ -202,7 +204,7 @@
         }
 
         .info-label {
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
@@ -212,7 +214,7 @@
         }
 
         .info-block p {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             font-weight: 500;
             letter-spacing: 0.03em;
             line-height: 1.5;
@@ -223,7 +225,7 @@
 
         .final-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 900;
             letter-spacing: 0.05em;
             margin: 4rem 0 3rem;
@@ -241,7 +243,7 @@
             background: #000000;
             color: #ffffff;
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.65rem;
+            font-size: 0.7rem;
             font-weight: 600;
             letter-spacing: 0.2em;
             text-decoration: none;
@@ -257,7 +259,7 @@
 
         .footer {
             text-align: center;
-            font-size: 0.5rem;
+            font-size: 0.6rem;
             font-weight: 500;
             color: #000000;
             opacity: 0.35;
@@ -267,6 +269,7 @@
             letter-spacing: 0.1em;
         }
 
+        /* МОБИЛКИ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
@@ -295,11 +298,16 @@
             .main-text {
                 font-size: 0.65rem;
                 margin-bottom: 4rem;
-                word-spacing: 0.15em;
             }
-            .main-text p {
+            .main-text p:not(:first-child) {
+                text-align: justify;
+                text-justify: inter-word;
+                word-spacing: 0.3em;
                 margin-bottom: 2rem;
-                word-spacing: 0.15em;
+            }
+            .main-text p:first-child {
+                text-align: center;
+                margin-bottom: 2rem;
             }
 
             .day-card {
@@ -317,7 +325,7 @@
             .feature-list li {
                 font-size: 0.6rem;
                 margin-bottom: 1rem;
-                word-spacing: 0.1em;
+                word-spacing: 0.2em;
             }
             .price-value {
                 font-size: 0.85rem;
@@ -347,6 +355,10 @@
             .ticket-btn {
                 font-size: 0.6rem;
                 padding: 0.8rem 1.5rem;
+            }
+
+            .footer {
+                font-size: 0.5rem;
             }
         }
 
