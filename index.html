@@ -76,7 +76,7 @@
             opacity: 1;
         }
 
-        /* ВЕСЬ ТЕКСТ — КАПС И ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
+        /* ВЕСЬ ТЕКСТ — КАПС И ВЫРАВНИВАНИЕ ПО ШИРИНЕ С БОЛЬШИМИ ПРОБЕЛАМИ */
         .main-text,
         .day-badge,
         .day-title,
@@ -97,11 +97,15 @@
             color: #000000;
             margin-bottom: 6rem;
             text-align: justify;
+            text-justify: inter-word;
+            word-break: normal;
         }
 
         .main-text p {
             margin-bottom: 2rem;
             text-align: justify;
+            text-justify: inter-word;
+            word-break: normal;
         }
 
         .main-text p:first-child {
@@ -155,6 +159,8 @@
             margin-bottom: 1.2rem;
             color: #000000;
             text-align: justify;
+            text-justify: inter-word;
+            word-break: normal;
         }
 
         .feature-list li:last-child {
@@ -189,7 +195,7 @@
             text-align: center;
         }
 
-        /* МЕСТО И ВРЕМЯ — БЕЗ ЛИШНИХ ОТСТУПОВ, КОМПАКТНО */
+        /* МЕСТО И ВРЕМЯ — КОМПАКТНО */
         .info-card {
             border-top: 1px solid rgba(0, 0, 0, 0.15);
             border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -373,7 +379,7 @@
         </div>
     </div>
 
-    <!-- ТЕКСТ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ -->
+    <!-- ТЕКСТ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ С БОЛЬШИМИ ПРОБЕЛАМИ -->
     <div class="main-text">
         <p>ВСЕМ ПРИВЕТ!</p>
         <p>Я ПОДУМАЛА, ЧТО БУДЕТ НЕПРАВИЛЬНО НИКАК НЕ ОТМЕТИТЬ ЭТОТ ДЕНЬ И НЕ ПОДЕЛИТЬСЯ СВОИМ ОПЫТОМ С ВАМИ<br>ПРИГЛАШАЮ ВАС НА СВОЙ ПРАЗДНИК, КОТОРЫЙ МЫ ОТМЕТИМ ДВУХДНЕВНЫМ МАСТЕР КЛАССОМ!<br>И, САМОЕ КЛАССНОЕ, МНЕ НЕВАЖНО КАКОЙ У ВАС УРОВЕНЬ В МАКИЯЖЕ, МОЙ МАСТЕР КЛАСС БУДЕТ ПОНЯТЕН КАЖДОМУ. МОЯ ЗАДАЧА ВДОХНОВИТЬ, НАУЧИТЬ И НАПОЛНИТЬ!</p>
@@ -413,7 +419,7 @@
         </div>
     </div>
 
-    <!-- МЕСТО И ВРЕМЯ — КОМПАКТНО, БЕЗ ЛИШНИХ ОТСТУПОВ -->
+    <!-- МЕСТО И ВРЕМЯ — КОМПАКТНО -->
     <div class="info-card">
         <div class="info-label">МЕСТО И ВРЕМЯ</div>
         <div class="info-block">
