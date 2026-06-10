@@ -96,15 +96,6 @@
             margin-bottom: 6rem;
         }
 
-        /* ВТОРОЙ И ТРЕТИЙ АБЗАЦЫ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ С БОЛЬШИМИ ПРОБЕЛАМИ */
-        .main-text p:not(:first-child) {
-            text-align: justify;
-            text-justify: inter-word;
-            word-break: normal;
-            word-spacing: 0.4em;
-            margin-bottom: 2rem;
-        }
-
         /* ПЕРВЫЙ АБЗАЦ — ПО ЦЕНТРУ */
         .main-text p:first-child {
             text-align: center;
@@ -112,7 +103,21 @@
             margin-bottom: 2rem;
         }
 
-        .main-text p:last-child {
+        /* ВТОРОЙ АБЗАЦ — ОГРОМНЫЕ ПРОБЕЛЫ (как в Neutra) */
+        .main-text p:nth-child(2) {
+            text-align: justify;
+            text-justify: inter-word;
+            word-break: normal;
+            word-spacing: 0.8em;
+            margin-bottom: 2rem;
+        }
+
+        /* ТРЕТИЙ АБЗАЦ — БОЛЬШИЕ ПРОБЕЛЫ */
+        .main-text p:nth-child(3) {
+            text-align: justify;
+            text-justify: inter-word;
+            word-break: normal;
+            word-spacing: 0.4em;
             margin-bottom: 0;
         }
 
@@ -299,15 +304,20 @@
                 font-size: 0.65rem;
                 margin-bottom: 4rem;
             }
-            .main-text p:not(:first-child) {
+            .main-text p:first-child {
+                text-align: center;
+                margin-bottom: 1.8rem;
+            }
+            .main-text p:nth-child(2) {
+                text-align: justify;
+                text-justify: inter-word;
+                word-spacing: 0.6em;
+                margin-bottom: 1.8rem;
+            }
+            .main-text p:nth-child(3) {
                 text-align: justify;
                 text-justify: inter-word;
                 word-spacing: 0.3em;
-                margin-bottom: 2rem;
-            }
-            .main-text p:first-child {
-                text-align: center;
-                margin-bottom: 2rem;
             }
 
             .day-card {
