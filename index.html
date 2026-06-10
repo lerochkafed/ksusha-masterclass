@@ -33,7 +33,7 @@
 
         /* ЗАГОЛОВОК */
         .title-wrapper {
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
             text-align: center;
         }
 
@@ -50,10 +50,10 @@
 
         .title-name {
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 300;
             letter-spacing: 0.08em;
-            text-transform: lowercase;
+            text-transform: uppercase;
             color: #000000;
             opacity: 0.5;
         }
@@ -62,7 +62,7 @@
         .photo-wrapper {
             display: flex;
             justify-content: center;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
         }
 
         .frame {
@@ -76,14 +76,26 @@
             opacity: 1;
         }
 
-        /* ТЕКСТ КСЮШИ */
+        /* ВЕСЬ ТЕКСТ — КАПС */
+        .main-text,
+        .day-badge,
+        .day-title,
+        .feature-list li,
+        .price-hint,
+        .info-block p,
+        .info-label,
+        .final-vsyo,
+        .footer {
+            text-transform: uppercase;
+        }
+
         .main-text {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.7;
             color: #000000;
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
             text-align: left;
         }
 
@@ -95,7 +107,7 @@
 
         .main-text p:first-child {
             text-align: center;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
         }
 
@@ -105,7 +117,7 @@
 
         .day-card {
             border-top: 1px solid rgba(0, 0, 0, 0.15);
-            padding: 2.5rem 0;
+            padding: 3rem 0;
             margin-bottom: 2rem;
         }
 
@@ -114,7 +126,7 @@
         }
 
         .day-badge {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
@@ -124,7 +136,7 @@
         }
 
         .day-title {
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
             letter-spacing: 0.04em;
             margin-bottom: 2rem;
@@ -139,7 +151,7 @@
         }
 
         .feature-list li {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.7;
@@ -165,14 +177,14 @@
 
         .price-value {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1rem;
+            font-size: 0.9rem;
             font-weight: 800;
             letter-spacing: 0.02em;
             color: #000000;
         }
 
         .price-hint {
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             font-weight: 500;
             letter-spacing: 0.05em;
             color: #000000;
@@ -183,12 +195,12 @@
         .info-card {
             border-top: 1px solid rgba(0, 0, 0, 0.15);
             border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-            padding: 2.5rem 0;
-            margin: 3rem 0 0 0;
+            padding: 3rem 0;
+            margin: 5rem 0 0 0;
         }
 
         .info-label {
-            font-size: 0.65rem;
+            font-size: 0.6rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
@@ -198,7 +210,7 @@
         }
 
         .info-block p {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
             letter-spacing: 0.03em;
             line-height: 1.6;
@@ -209,18 +221,17 @@
 
         .final-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 900;
             letter-spacing: 0.05em;
-            margin: 3rem 0 2.5rem;
+            margin: 4rem 0 3rem;
             color: #000000;
             text-align: center;
-            text-transform: uppercase;
         }
 
         .ticket-button-wrapper {
             text-align: center;
-            margin: 2.5rem 0 2rem;
+            margin: 2rem 0 2rem;
         }
 
         .ticket-btn {
@@ -228,7 +239,7 @@
             background: #000000;
             color: #ffffff;
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 600;
             letter-spacing: 0.2em;
             text-decoration: none;
@@ -244,118 +255,87 @@
 
         .footer {
             text-align: center;
-            font-size: 0.55rem;
+            font-size: 0.5rem;
             font-weight: 500;
             color: #000000;
-            opacity: 0.4;
+            opacity: 0.35;
             margin-top: 3rem;
             padding-top: 1.5rem;
             border-top: 0.5px solid rgba(0, 0, 0, 0.15);
             letter-spacing: 0.1em;
         }
 
-        /* ===== МОБИЛКИ — ОСНОВНОЙ УПОР ===== */
+        /* МОБИЛКИ — ОГРОМНЫЕ ОТСТУПЫ */
         @media (max-width: 550px) {
             .container {
-                padding: 1.5rem 0 3rem;
+                padding: 1.5rem 1.2rem 3rem;
             }
             .title-wrapper {
-                margin-bottom: 3rem;
-                padding: 0 1.2rem;
+                margin-bottom: 4rem;
             }
             .title-vsyo {
                 font-size: 2.5rem;
             }
             .title-name {
-                font-size: 0.7rem;
-                opacity: 0.4;
+                font-size: 0.6rem;
             }
 
-            /* ФОТО НА ВСЮ ШИРИНУ ЭКРАНА */
+            /* ФОТО НА ВСЮ ШИРИНУ */
             .photo-wrapper {
-                margin-bottom: 3rem;
-                margin-left: -1.5rem;
-                margin-right: -1.5rem;
-                width: calc(100% + 3rem);
+                margin-bottom: 4rem;
+                margin-left: -1.2rem;
+                margin-right: -1.2rem;
+                width: calc(100% + 2.4rem);
             }
             .frame {
                 width: 100%;
                 max-width: 100%;
             }
-            .frame img {
-                width: 100%;
-                border-radius: 0;
-            }
 
             .main-text {
-                font-size: 0.7rem;
-                margin-bottom: 3.5rem;
-                padding: 0 1.2rem;
+                font-size: 0.65rem;
+                margin-bottom: 4rem;
             }
             .main-text p {
-                margin-bottom: 1.8rem;
-            }
-            .main-text p:first-child {
-                font-size: 0.7rem;
+                margin-bottom: 2rem;
             }
 
             .day-card {
-                padding: 2rem 1.2rem;
+                padding: 2.5rem 0;
                 margin-bottom: 1.5rem;
             }
             .day-badge {
-                font-size: 0.6rem;
-                opacity: 0.45;
-                margin-bottom: 0.8rem;
+                font-size: 0.55rem;
+                margin-bottom: 1rem;
             }
             .day-title {
-                font-size: 0.9rem;
-                margin-bottom: 1.5rem;
+                font-size: 0.85rem;
+                margin-bottom: 1.8rem;
             }
             .feature-list li {
-                font-size: 0.65rem;
+                font-size: 0.6rem;
                 margin-bottom: 1rem;
-                line-height: 1.6;
             }
             .price-value {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
             }
             .price-hint {
-                font-size: 0.5rem;
-                opacity: 0.45;
+                font-size: 0.45rem;
             }
 
             .info-card {
-                padding: 2rem 1.2rem;
-                margin: 2.5rem 0 0 0;
-            }
-            .info-label {
-                font-size: 0.6rem;
-                opacity: 0.45;
-            }
-            .info-block p {
-                font-size: 0.7rem;
+                padding: 2.5rem 0;
+                margin: 4rem 0 0 0;
             }
 
             .final-vsyo {
-                font-size: 1rem;
-                margin: 2.5rem 0 2rem;
+                font-size: 0.9rem;
+                margin: 3rem 0 2.5rem;
             }
 
-            .ticket-button-wrapper {
-                margin: 2rem 0 1.5rem;
-            }
             .ticket-btn {
-                font-size: 0.65rem;
+                font-size: 0.6rem;
                 padding: 0.8rem 1.5rem;
-                min-width: 180px;
-            }
-
-            .footer {
-                font-size: 0.5rem;
-                opacity: 0.35;
-                margin-top: 2rem;
-                padding: 0 1.2rem 1rem 1.2rem;
             }
         }
 
@@ -367,23 +347,8 @@
         }
 
         @media (min-width: 768px) {
-            .container {
-                padding: 3rem 2rem 5rem;
-            }
             .frame {
                 max-width: 50%;
-            }
-            .title-vsyo {
-                font-size: 3rem;
-            }
-            .main-text {
-                font-size: 0.8rem;
-            }
-            .feature-list li {
-                font-size: 0.75rem;
-            }
-            .day-title {
-                font-size: 1rem;
             }
         }
     </style>
@@ -394,62 +359,62 @@
     <!-- ЗАГОЛОВОК -->
     <div class="title-wrapper">
         <div class="title-vsyo">ВСЁ</div>
-        <div class="title-name">ксюша голайда</div>
+        <div class="title-name">КСЮША ГОЛАЙДА</div>
     </div>
 
-    <!-- ФОТО — НА МОБИЛКАХ ВО ВСЮ ШИРИНУ -->
+    <!-- ФОТО НА ВСЮ ШИРИНУ НА МОБИЛКАХ -->
     <div class="photo-wrapper">
         <div class="frame">
             <img src="images/ksusha-photo.jpg" alt="Ксюша Голайда">
         </div>
     </div>
 
-    <!-- ТЕКСТ КСЮШИ -->
+    <!-- ТЕКСТ — КАПС, ОГРОМНЫЕ ОТСТУПЫ -->
     <div class="main-text">
-        <p>всем привет!</p>
-        <p>я подумала, что будет неправильно никак не отметить этот день и не поделиться своим опытом с вами<br>приглашаю вас на свой праздник, который мы отметим двухдневным мастер классом!<br>и, самое классное, мне неважно какой у вас уровень в макияже, мой мастер класс будет понятен каждому. моя задача вдохновить, научить и наполнить!</p>
-        <p>я предлагаю вам выбрать свой формат мастер класса:</p>
+        <p>ВСЕМ ПРИВЕТ!</p>
+        <p>Я ПОДУМАЛА, ЧТО БУДЕТ НЕПРАВИЛЬНО НИКАК НЕ ОТМЕТИТЬ ЭТОТ ДЕНЬ И НЕ ПОДЕЛИТЬСЯ СВОИМ ОПЫТОМ С ВАМИ<br>ПРИГЛАШАЮ ВАС НА СВОЙ ПРАЗДНИК, КОТОРЫЙ МЫ ОТМЕТИМ ДВУХДНЕВНЫМ МАСТЕР КЛАССОМ!<br>И, САМОЕ КЛАССНОЕ, МНЕ НЕВАЖНО КАКОЙ У ВАС УРОВЕНЬ В МАКИЯЖЕ, МОЙ МАСТЕР КЛАСС БУДЕТ ПОНЯТЕН КАЖДОМУ. МОЯ ЗАДАЧА ВДОХНОВИТЬ, НАУЧИТЬ И НАПОЛНИТЬ!</p>
+        <p>Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
     </div>
 
     <!-- ДЕНЬ 1 -->
     <div class="day-card">
-        <div class="day-badge">программа мастер класса</div>
-        <div class="day-title">посмотреть, послушать, поспрашивать<br>день первый.</div>
+        <div class="day-badge">ПРОГРАММА МАСТЕР КЛАССА</div>
+        <div class="day-title">ПОСМОТРЕТЬ, ПОСЛУШАТЬ, ПОСПРАШИВАТЬ<br>ДЕНЬ ПЕРВЫЙ.</div>
         <ul class="feature-list">
-            <li>особенный и очень наполненный день, в котором я покажу вам 2 своих самых любимых мейка, но в начале будет важный блок теории с возможностью задавать вопросы</li>
-            <li><strong>1.тот самый нюд.</strong> расскажу про то, как сделать красивую кожу, про анатомию лица, и важные моменты в работе с клиентом. Про отличия работы на съемках, на сцене и в жизни, а также про то, как ведет себя макияж в те или иные моменты.</li>
-            <li>после мы сделаем перерыв на кофе или шампанское, кто что больше любит</li>
-            <li><strong>2.показ моих фирменных смоки, а также их трансформация.</strong> покажу как губы могут менять настроение в макияже. расскажу про тенденции и как их отслеживать, про то где искать клиентов и работать на крупных проектах.</li>
-            <li>в конце будет время для любых ваших вопросов, но я с удовольствием буду отвечать на них и во время мастер класса (если они будут по теме, чтобы я не запуталась в мыслях :))</li>
+            <li>ОСОБЕННЫЙ И ОЧЕНЬ НАПОЛНЕННЫЙ ДЕНЬ, В КОТОРОМ Я ПОКАЖУ ВАМ 2 СВОИХ САМЫХ ЛЮБИМЫХ МЕЙКА, НО В НАЧАЛЕ БУДЕТ ВАЖНЫЙ БЛОК ТЕОРИИ С ВОЗМОЖНОСТЬЮ ЗАДАВАТЬ ВОПРОСЫ</li>
+            <li><strong>1.ТОТ САМЫЙ НЮД.</strong> РАССКАЖУ ПРО ТО, КАК СДЕЛАТЬ КРАСИВУЮ КОЖУ, ПРО АНАТОМИЮ ЛИЦА, И ВАЖНЫЕ МОМЕНТЫ В РАБОТЕ С КЛИЕНТОМ. ПРО ОТЛИЧИЯ РАБОТЫ НА СЪЕМКАХ, НА СЦЕНЕ И В ЖИЗНИ, А ТАКЖЕ ПРО ТО, КАК ВЕДЕТ СЕБЯ МАКИЯЖ В ТЕ ИЛИ ИНЫЕ МОМЕНТЫ.</li>
+            <li>ПОСЛЕ МЫ СДЕЛАЕМ ПЕРЕРЫВ НА КОФЕ ИЛИ ШАМПАНСКОЕ, КТО ЧТО БОЛЬШЕ ЛЮБИТ</li>
+            <li><strong>2.ПОКАЗ МОИХ ФИРМЕННЫХ СМОКИ, А ТАКЖЕ ИХ ТРАНСФОРМАЦИЯ.</strong> ПОКАЖУ КАК ГУБЫ МОГУТ МЕНЯТЬ НАСТРОЕНИЕ В МАКИЯЖЕ. РАССКАЖУ ПРО ТЕНДЕНЦИИ И КАК ИХ ОТСЛЕЖИВАТЬ, ПРО ТО ГДЕ ИСКАТЬ КЛИЕНТОВ И РАБОТАТЬ НА КРУПНЫХ ПРОЕКТАХ.</li>
+            <li>В КОНЦЕ БУДЕТ ВРЕМЯ ДЛЯ ЛЮБЫХ ВАШИХ ВОПРОСОВ, НО Я С УДОВОЛЬСТВИЕМ БУДУ ОТВЕЧАТЬ НА НИХ И ВО ВРЕМЯ МАСТЕР КЛАССА (ЕСЛИ ОНИ БУДУТ ПО ТЕМЕ, ЧТОБЫ Я НЕ ЗАПУТАЛАСЬ В МЫСЛЯХ :))</li>
         </ul>
         <div class="price-block">
             <div class="price-value">25 000 ₽</div>
-            <div class="price-hint">продолжительность 5 часов</div>
+            <div class="price-hint">ПРОДОЛЖИТЕЛЬНОСТЬ 5 ЧАСОВ</div>
         </div>
     </div>
 
     <!-- ДЕНЬ 2 -->
     <div class="day-card">
-        <div class="day-badge">день 2</div>
-        <div class="day-title">секси-настроение и отработка</div>
+        <div class="day-badge">ДЕНЬ 2</div>
+        <div class="day-title">СЕКСИ-НАСТРОЕНИЕ И ОТРАБОТКА</div>
         <ul class="feature-list">
-            <li>этот день продолжение первого, но к сожалению здесь количество мест очень ограничено, потому что здесь будет отработка и для меня важно быть с каждым рядом, помочь и поставить руку, если понадобится</li>
-            <li>но помимо отработки вас будет ждать еще один показ на модели — назову его <strong>секси</strong>, потому что для меня это особенное настроение, которое я передаю женщинам с помощью мейка. а секси без стрелок…. быть не может, поэтому я покажу их вам и расскажу, как рисовать их на любом веке, конечно в современной интерпретации и через свое виденье</li>
-            <li>здесь вас будет всего 10 человек, поэтому сможем обсудить и рассмотреть самые мелкие детали !</li>
-            <li>я предоставлю свой кейс для отработки, но нужны будут собственные кисти (если захотите отработать на своей косметике, то это только приветствуется, так как вам будет проще в дальнейшем)</li>
+            <li>ЭТОТ ДЕНЬ ПРОДОЛЖЕНИЕ ПЕРВОГО, НО К СОЖАЛЕНИЮ ЗДЕСЬ КОЛИЧЕСТВО МЕСТ ОЧЕНЬ ОГРАНИЧЕНО, ПОТОМУ ЧТО ЗДЕСЬ БУДЕТ ОТРАБОТКА И ДЛЯ МЕНЯ ВАЖНО БЫТЬ С КАЖДЫМ РЯДОМ, ПОМОЧЬ И ПОСТАВИТЬ РУКУ, ЕСЛИ ПОНАДОБИТСЯ</li>
+            <li>НО ПОМИМО ОТРАБОТКИ ВАС БУДЕТ ЖДАТЬ ЕЩЕ ОДИН ПОКАЗ НА МОДЕЛИ — НАЗОВУ ЕГО <strong>СЕКСИ</strong>, ПОТОМУ ЧТО ДЛЯ МЕНЯ ЭТО ОСОБЕННОЕ НАСТРОЕНИЕ, КОТОРОЕ Я ПЕРЕДАЮ ЖЕНЩИНАМ С ПОМОЩЬЮ МЕЙКА. А СЕКСИ БЕЗ СТРЕЛОК…. БЫТЬ НЕ МОЖЕТ, ПОЭТОМУ Я ПОКАЖУ ИХ ВАМ И РАССКАЖУ, КАК РИСОВАТЬ ИХ НА ЛЮБОМ ВЕКЕ, КОНЕЧНО В СОВРЕМЕННОЙ ИНТЕРПРЕТАЦИИ И ЧЕРЕЗ СВОЕ ВИДЕНЬЕ</li>
+            <li>ЗДЕСЬ ВАС БУДЕТ ВСЕГО 10 ЧЕЛОВЕК, ПОЭТОМУ СМОЖЕМ ОБСУДИТЬ И РАССМОТРЕТЬ САМЫЕ МЕЛКИЕ ДЕТАЛИ !</li>
+            <li>Я ПРЕДОСТАВЛЮ СВОЙ КЕЙС ДЛЯ ОТРАБОТКИ, НО НУЖНЫ БУДУТ СОБСТВЕННЫЕ КИСТИ (ЕСЛИ ЗАХОТИТЕ ОТРАБОТАТЬ НА СВОЕЙ КОСМЕТИКЕ, ТО ЭТО ТОЛЬКО ПРИВЕТСТВУЕТСЯ, ТАК КАК ВАМ БУДЕТ ПРОЩЕ В ДАЛЬНЕЙШЕМ)</li>
         </ul>
         <div class="price-block">
             <div class="price-value">60 000 ₽</div>
-            <div class="price-hint">стоимость за оба дня</div>
+            <div class="price-hint">СТОИМОСТЬ ЗА ОБА ДНЯ</div>
         </div>
     </div>
 
     <!-- МЕСТО И ВРЕМЯ -->
     <div class="info-card">
-        <div class="info-label">место и время</div>
+        <div class="info-label">МЕСТО И ВРЕМЯ</div>
         <div class="info-block">
-            <p>место проведения:</p>
-            <p>время:</p>
+            <p>МЕСТО ПРОВЕДЕНИЯ:</p>
+            <p>ВРЕМЯ:</p>
         </div>
     </div>
 
@@ -464,7 +429,7 @@
     </div>
 
     <div class="footer">
-        оплата происходит на странице qtickets · билет можно добавить в wallet
+        ОПЛАТА ПРОИСХОДИТ НА СТРАНИЦЕ QTICKETS · БИЛЕТ МОЖНО ДОБАВИТЬ В WALLET
     </div>
 </div>
 
