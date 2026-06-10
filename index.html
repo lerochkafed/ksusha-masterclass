@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Ксюша Голайда · мастер-класс</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;800;900&family=IBM+Plex+Mono:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.5;
+            font-weight: 500;
+            font-variant-numeric: lining-nums;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+        }
+
+        /* ЗАГОЛОВОК */
+        .title-wrapper {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .title-vsyo {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: clamp(2.2rem, 6vw, 3.2rem);
+            font-weight: 900;
+            letter-spacing: 0.01em;
+            line-height: 1;
+            text-transform: uppercase;
+            margin-bottom: 0.3rem;
+            color: #1a1a1a;
+        }
+
+        .title-name {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: clamp(0.7rem, 2vw, 0.85rem);
+            font-weight: 300;
+            letter-spacing: 0.08em;
+            text-transform: lowercase;
+            color: #5a5a5a;
+        }
+
+        /* ФОТО */
+        .photo-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: clamp(3rem, 10vw, 6rem);
+        }
+
+        .frame {
+            display: inline-block;
+            max-width: 55%;
+        }
+
+        .frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            opacity: 1;
+        }
+
+        /* ВЕСЬ ТЕКСТ ОДИНАКОВОГО РАЗМЕРА */
+        .main-text,
+        .day-badge,
+        .day-title,
+        .feature-list li,
+        .price-hint,
+        .info-block p,
+        .info-label,
+        .footer {
+            text-transform: uppercase;
+        }
+
+        .main-text {
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 1.6;
+            color: #3a3a3a;
+            margin-bottom: clamp(3rem, 10vw, 6rem);
+            text-align: left;
+        }
+
+        .main-text p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        /* ПЕРВЫЙ АБЗАЦ ТОЖЕ ОБЫЧНЫЙ, НЕ КРУПНЕЕ */
+        .main-text p:first-child {
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .main-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .day-card {
+            border-top: 1px solid #e0dcd0;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .day-card:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .day-badge {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            color: #8a8a7a;
+            margin-bottom: 0.5rem;
+            text-align: center;
+        }
+
+        .day-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 1rem;
+        }
+
+        .feature-list li {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+            color: #3a3a3a;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .feature-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-list li strong {
+            font-weight: 700;
+            color: #1a1a1a;
+        }
+
+        .price-block {
+            margin-top: 0.8rem;
+            text-align: center;
+        }
+
+        .price-value {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+            letter-spacing: 0.02em;
+            color: #1a1a1a;
+        }
+
+        .price-hint {
+            font-size: 0.6rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            color: #8a8a7a;
+            margin-top: 0.2rem;
+        }
+
+        .info-card {
+            border-top: 1px solid #e0dcd0;
+            border-bottom: 1px solid #e0dcd0;
+            padding: 1.5rem 0;
+            margin: 3rem 0 0 0;
+        }
+
+        .info-label {
+            font-size: 0.65rem;
+            font-weight: 500;
+            letter-spacing: 0.15em;
+            color: #8a8a7a;
+            margin-bottom: 0.8rem;
+            text-align: center;
+        }
+
+        .info-block p {
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.03em;
+            line-height: 1.4;
+            margin-bottom: 0.4rem;
+            color: #3a3a3a;
+            text-align: center;
+        }
+
+        .final-vsyo {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            margin: 2rem 0 2rem;
+            color: #1a1a1a;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .ticket-button-wrapper {
+            text-align: center;
+            margin: 2rem 0 1.5rem;
+        }
+
+        .ticket-btn {
+            display: inline-block;
+            background: #1a1a1a;
+            color: #ffffff;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.2em;
+            text-decoration: none;
+            padding: 0.8rem 1.5rem;
+            transition: opacity 0.2s ease;
+            width: auto;
+            min-width: 200px;
+        }
+
+        .ticket-btn:hover {
+            opacity: 0.85;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 0.6rem;
+            font-weight: 500;
+            color: #aaa89a;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 0.5px solid #e0dcd0;
+            letter-spacing: 0.1em;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                padding: 3rem 2rem 4rem;
+            }
+            .frame {
+                max-width: 45%;
+            }
+            .main-text {
+                font-size: 0.95rem;
+            }
+            .main-text p:first-child {
+                font-size: 0.95rem;
+            }
+            .feature-list li {
+                font-size: 0.85rem;
+            }
+            .day-title {
+                font-size: 1.2rem;
+            }
+            .price-value {
+                font-size: 1.1rem;
+            }
+            .final-vsyo {
+                font-size: 1.2rem;
+            }
+            .ticket-btn {
+                font-size: 0.8rem;
+                padding: 1rem 2rem;
+            }
+            .day-card {
+                margin-bottom: 2.5rem;
+            }
+            .info-card {
+                margin-top: 4rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .frame {
+                max-width: 40%;
+            }
+            .main-text {
+                margin-bottom: 6rem;
+            }
+            .photo-wrapper {
+                margin-bottom: 6rem;
+            }
+            .main-text p {
+                margin-bottom: 1.2rem;
+            }
+            .day-card {
+                margin-bottom: 3rem;
+            }
+            .info-card {
+                margin-top: 5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- ЗАГОЛОВОК -->
+    <div class="title-wrapper">
+        <div class="title-vsyo">ВСЁ</div>
+        <div class="title-name">ксюша голайда</div>
+    </div>
+
+    <!-- ФОТО -->
+    <div class="photo-wrapper">
+        <div class="frame">
+            <img src="images/ksusha-photo.jpg" alt="Ксюша Голайда">
+        </div>
+    </div>
+
+    <!-- ТЕКСТ — ВЕЗДЕ ОДИНАКОВЫЙ РАЗМЕР -->
+    <div class="main-text">
+        <p>всем привет!</p>
+        <p>я подумала, что будет неправильно никак не отметить этот день и не поделиться своим опытом с вами<br>приглашаю вас на свой праздник, который мы отметим двухдневным мастер классом!<br>и, самое классное, мне неважно какой у вас уровень в макияже, мой мастер класс будет понятен каждому. моя задача вдохновить, научить и наполнить!</p>
+        <p>я предлагаю вам выбрать свой формат мастер класса:</p>
+    </div>
+
+    <!-- ДЕНЬ 1 -->
+    <div class="day-card">
+        <div class="day-badge">программа мастер класса</div>
+        <div class="day-title">посмотреть, послушать, поспрашивать<br>день первый.</div>
+        <ul class="feature-list">
+            <li>особенный и очень наполненный день, в котором я покажу вам 2 своих самых любимых мейка, но в начале будет важный блок теории с возможностью задавать вопросы</li>
+            <li><strong>1.тот самый нюд.</strong> расскажу про то, как сделать красивую кожу, про анатомию лица, и важные моменты в работе с клиентом. Про отличия работы на съемках, на сцене и в жизни, а также про то, как ведет себя макияж в те или иные моменты.</li>
+            <li>после мы сделаем перерыв на кофе или шампанское, кто что больше любит</li>
+            <li><strong>2.показ моих фирменных смоки, а также их трансформация.</strong> покажу как губы могут менять настроение в макияже. расскажу про тенденции и как их отслеживать, про то где искать клиентов и работать на крупных проектах.</li>
+            <li>в конце будет время для любых ваших вопросов, но я с удовольствием буду отвечать на них и во время мастер класса (если они будут по теме, чтобы я не запуталась в мыслях :))</li>
+        </ul>
+        <div class="price-block">
+            <div class="price-value">25 000 ₽</div>
+            <div class="price-hint">продолжительность 5 часов</div>
+        </div>
+    </div>
+
+    <!-- ДЕНЬ 2 -->
+    <div class="day-card">
+        <div class="day-badge">день 2</div>
+        <div class="day-title">секси-настроение и отработка</div>
+        <ul class="feature-list">
+            <li>этот день продолжение первого, но к сожалению здесь количество мест очень ограничено, потому что здесь будет отработка и для меня важно быть с каждым рядом, помочь и поставить руку, если понадобится</li>
+            <li>но помимо отработки вас будет ждать еще один показ на модели — назову его <strong>секси</strong>, потому что для меня это особенное настроение, которое я передаю женщинам с помощью мейка. а секси без стрелок…. быть не может, поэтому я покажу их вам и расскажу, как рисовать их на любом веке, конечно в современной интерпретации и через свое виденье</li>
+            <li>здесь вас будет всего 10 человек, поэтому сможем обсудить и рассмотреть самые мелкие детали !</li>
+            <li>я предоставлю свой кейс для отработки, но нужны будут собственные кисти (если захотите отработать на своей косметике, то это только приветствуется, так как вам будет проще в дальнейшем)</li>
+        </ul>
+        <div class="price-block">
+            <div class="price-value">60 000 ₽</div>
+            <div class="price-hint">стоимость за оба дня</div>
+        </div>
+    </div>
+
+    <!-- МЕСТО И ВРЕМЯ -->
+    <div class="info-card">
+        <div class="info-label">место и время</div>
+        <div class="info-block">
+            <p>место проведения:</p>
+            <p>время:</p>
+        </div>
+    </div>
+
+    <!-- ВСЁ! -->
+    <div class="final-vsyo">ВСЁ!</div>
+
+    <!-- КНОПКА -->
+    <div class="ticket-button-wrapper">
+        <a href="https://qtickets.ru/event/ZAMENIT_NA_SSYLKU_KSYUSHI" target="_blank" class="ticket-btn">
+            ВЫБРАТЬ БИЛЕТ
+        </a>
+    </div>
+
+    <div class="footer">
+        оплата происходит на странице qtickets · билет можно добавить в wallet
+    </div>
+</div>
+
+</body>
+</html>
