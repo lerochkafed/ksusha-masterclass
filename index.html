@@ -39,7 +39,7 @@
 
         .title-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: clamp(2.5rem, 7vw, 3.5rem);
+            font-size: clamp(2.8rem, 8vw, 3.5rem);
             font-weight: 900;
             letter-spacing: 0.01em;
             line-height: 1;
@@ -50,11 +50,12 @@
 
         .title-name {
             font-family: 'IBM Plex Mono', monospace;
-            font-size: clamp(0.75rem, 2.2vw, 0.9rem);
+            font-size: clamp(0.9rem, 3vw, 0.9rem);
             font-weight: 300;
             letter-spacing: 0.08em;
             text-transform: lowercase;
             color: #000000;
+            opacity: 0.7;
         }
 
         /* ФОТО */
@@ -66,7 +67,7 @@
 
         .frame {
             display: inline-block;
-            max-width: 60%;
+            max-width: 65%;
         }
 
         .frame img {
@@ -89,7 +90,7 @@
         }
 
         .main-text {
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.7;
@@ -106,7 +107,7 @@
 
         .main-text p:first-child {
             text-align: center;
-            font-size: 0.9rem;
+            font-size: 1rem;
             font-weight: 500;
         }
 
@@ -115,7 +116,7 @@
         }
 
         .day-card {
-            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
             padding: 2.5rem 0;
             margin-bottom: 2rem;
         }
@@ -125,16 +126,17 @@
         }
 
         .day-badge {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
+            opacity: 0.6;
             margin-bottom: 0.8rem;
             text-align: center;
         }
 
         .day-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 600;
             letter-spacing: 0.04em;
             margin-bottom: 1.8rem;
@@ -148,7 +150,7 @@
         }
 
         .feature-list li {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 500;
             letter-spacing: 0.02em;
             line-height: 1.8;
@@ -174,38 +176,40 @@
 
         .price-value {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1.1rem;
+            font-size: 1.3rem;
             font-weight: 800;
             letter-spacing: 0.02em;
             color: #000000;
         }
 
         .price-hint {
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             font-weight: 500;
             letter-spacing: 0.05em;
             color: #000000;
+            opacity: 0.6;
             margin-top: 0.3rem;
         }
 
         .info-card {
-            border-top: 1px solid rgba(0, 0, 0, 0.2);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            border-top: 1px solid rgba(0, 0, 0, 0.15);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
             padding: 2.5rem 0;
             margin: 4rem 0 0 0;
         }
 
         .info-label {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             font-weight: 500;
             letter-spacing: 0.15em;
             color: #000000;
+            opacity: 0.6;
             margin-bottom: 1rem;
             text-align: center;
         }
 
         .info-block p {
-            font-size: 0.85rem;
+            font-size: 0.95rem;
             font-weight: 500;
             letter-spacing: 0.03em;
             line-height: 1.6;
@@ -216,7 +220,7 @@
 
         .final-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 900;
             letter-spacing: 0.05em;
             margin: 3rem 0 2.5rem;
@@ -235,7 +239,7 @@
             background: #000000;
             color: #ffffff;
             font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.85rem;
             font-weight: 600;
             letter-spacing: 0.2em;
             text-decoration: none;
@@ -251,58 +255,98 @@
 
         .footer {
             text-align: center;
-            font-size: 0.65rem;
+            font-size: 0.7rem;
             font-weight: 500;
             color: #000000;
+            opacity: 0.5;
             margin-top: 3rem;
             padding-top: 1.5rem;
-            border-top: 0.5px solid rgba(0, 0, 0, 0.2);
+            border-top: 0.5px solid rgba(0, 0, 0, 0.15);
             letter-spacing: 0.1em;
         }
 
-        /* МОБИЛЬНЫЕ — МАКСИМАЛЬНЫЙ ВОЗДУХ */
+        /* МОБИЛЬНЫЕ — УВЕЛИЧЕННЫЕ ШРИФТЫ И ПРОЗРАЧНОСТЬ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
             }
             .title-wrapper {
-                margin-bottom: 3.5rem;
+                margin-bottom: 3rem;
+            }
+            .title-vsyo {
+                font-size: 2.8rem;
+            }
+            .title-name {
+                font-size: 0.85rem;
+                opacity: 0.6;
             }
             .photo-wrapper {
-                margin-bottom: 4rem;
+                margin-bottom: 3.5rem;
+            }
+            .frame {
+                max-width: 70%;
             }
             .main-text {
-                margin-bottom: 4rem;
+                font-size: 0.9rem;
+                margin-bottom: 3.5rem;
             }
             .main-text p {
-                margin-bottom: 1.8rem;
+                margin-bottom: 1.5rem;
+            }
+            .main-text p:first-child {
+                font-size: 0.9rem;
             }
             .day-card {
-                padding: 2rem 0;
-                margin-bottom: 2rem;
+                padding: 1.8rem 0;
+                margin-bottom: 1.5rem;
+            }
+            .day-badge {
+                font-size: 0.7rem;
+                opacity: 0.5;
             }
             .day-title {
+                font-size: 1.1rem;
                 margin-bottom: 1.5rem;
             }
             .feature-list li {
-                margin-bottom: 1.2rem;
-                line-height: 1.8;
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+                line-height: 1.7;
             }
-            .price-block {
-                margin-top: 1.2rem;
+            .price-value {
+                font-size: 1.1rem;
+            }
+            .price-hint {
+                font-size: 0.65rem;
+                opacity: 0.5;
             }
             .info-card {
-                padding: 2rem 0;
+                padding: 1.8rem 0;
                 margin: 3rem 0 0 0;
             }
+            .info-label {
+                font-size: 0.7rem;
+                opacity: 0.5;
+            }
+            .info-block p {
+                font-size: 0.85rem;
+            }
             .final-vsyo {
-                margin: 2.5rem 0 2rem;
+                font-size: 1.2rem;
+                margin: 2rem 0 2rem;
             }
             .ticket-button-wrapper {
                 margin: 2rem 0 1.5rem;
             }
+            .ticket-btn {
+                font-size: 0.7rem;
+                padding: 0.9rem 1.5rem;
+                min-width: 200px;
+            }
             .footer {
-                margin-top: 2.5rem;
+                font-size: 0.6rem;
+                opacity: 0.5;
+                margin-top: 2rem;
             }
         }
 
@@ -311,38 +355,32 @@
                 padding: 3rem 2rem 5rem;
             }
             .frame {
-                max-width: 45%;
+                max-width: 50%;
             }
             .main-text {
-                font-size: 0.95rem;
+                font-size: 1rem;
             }
             .feature-list li {
-                font-size: 0.85rem;
+                font-size: 0.9rem;
             }
             .day-title {
-                font-size: 1.2rem;
-            }
-            .price-value {
-                font-size: 1.1rem;
-            }
-            .final-vsyo {
                 font-size: 1.3rem;
             }
+            .price-value {
+                font-size: 1.3rem;
+            }
+            .final-vsyo {
+                font-size: 1.5rem;
+            }
             .ticket-btn {
-                font-size: 0.8rem;
+                font-size: 0.85rem;
                 padding: 1rem 2rem;
-            }
-            .day-card {
-                margin-bottom: 2.5rem;
-            }
-            .info-card {
-                margin-top: 4rem;
             }
         }
 
         @media (min-width: 1024px) {
             .frame {
-                max-width: 40%;
+                max-width: 45%;
             }
             .main-text {
                 margin-bottom: 6rem;
@@ -355,9 +393,6 @@
             }
             .day-card {
                 margin-bottom: 3rem;
-            }
-            .info-card {
-                margin-top: 5rem;
             }
         }
     </style>
