@@ -76,7 +76,7 @@
             opacity: 1;
         }
 
-        /* ВЕСЬ ТЕКСТ — КАПС */
+        /* ВЕСЬ ТЕКСТ — КАПС И ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
         .main-text,
         .day-badge,
         .day-title,
@@ -96,19 +96,16 @@
             line-height: 1.7;
             color: #000000;
             margin-bottom: 6rem;
-            text-align: left;
+            text-align: justify;
         }
 
         .main-text p {
             margin-bottom: 2rem;
             text-align: justify;
-            text-justify: inter-word;
         }
 
         .main-text p:first-child {
             text-align: center;
-            font-size: 0.7rem;
-            font-weight: 500;
         }
 
         .main-text p:last-child {
@@ -158,7 +155,6 @@
             margin-bottom: 1.2rem;
             color: #000000;
             text-align: justify;
-            text-justify: inter-word;
         }
 
         .feature-list li:last-child {
@@ -190,13 +186,15 @@
             color: #000000;
             opacity: 0.5;
             margin-top: 0.4rem;
+            text-align: center;
         }
 
+        /* МЕСТО И ВРЕМЯ — БЕЗ ЛИШНИХ ОТСТУПОВ, КОМПАКТНО */
         .info-card {
             border-top: 1px solid rgba(0, 0, 0, 0.15);
             border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-            padding: 3rem 0;
-            margin: 5rem 0 0 0;
+            padding: 1.5rem 0;
+            margin: 4rem 0 0 0;
         }
 
         .info-label {
@@ -205,7 +203,7 @@
             letter-spacing: 0.15em;
             color: #000000;
             opacity: 0.5;
-            margin-bottom: 1rem;
+            margin-bottom: 0.8rem;
             text-align: center;
         }
 
@@ -213,8 +211,8 @@
             font-size: 0.7rem;
             font-weight: 500;
             letter-spacing: 0.03em;
-            line-height: 1.6;
-            margin-bottom: 0.6rem;
+            line-height: 1.5;
+            margin-bottom: 0.4rem;
             color: #000000;
             text-align: center;
         }
@@ -265,7 +263,7 @@
             letter-spacing: 0.1em;
         }
 
-        /* МОБИЛКИ — ОГРОМНЫЕ ОТСТУПЫ */
+        /* МОБИЛКИ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
@@ -280,7 +278,6 @@
                 font-size: 0.6rem;
             }
 
-            /* ФОТО НА ВСЮ ШИРИНУ */
             .photo-wrapper {
                 margin-bottom: 4rem;
                 margin-left: -1.2rem;
@@ -324,8 +321,16 @@
             }
 
             .info-card {
-                padding: 2.5rem 0;
-                margin: 4rem 0 0 0;
+                padding: 1.2rem 0;
+                margin: 3rem 0 0 0;
+            }
+            .info-label {
+                font-size: 0.55rem;
+                margin-bottom: 0.6rem;
+            }
+            .info-block p {
+                font-size: 0.65rem;
+                margin-bottom: 0.3rem;
             }
 
             .final-vsyo {
@@ -339,7 +344,6 @@
             }
         }
 
-        /* ПЛАНШЕТЫ/ДЕСКТОП */
         @media (min-width: 551px) {
             .frame {
                 max-width: 55%;
@@ -362,14 +366,14 @@
         <div class="title-name">КСЮША ГОЛАЙДА</div>
     </div>
 
-    <!-- ФОТО НА ВСЮ ШИРИНУ НА МОБИЛКАХ -->
+    <!-- ФОТО -->
     <div class="photo-wrapper">
         <div class="frame">
             <img src="images/ksusha-photo.jpg" alt="Ксюша Голайда">
         </div>
     </div>
 
-    <!-- ТЕКСТ — КАПС, ОГРОМНЫЕ ОТСТУПЫ -->
+    <!-- ТЕКСТ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ -->
     <div class="main-text">
         <p>ВСЕМ ПРИВЕТ!</p>
         <p>Я ПОДУМАЛА, ЧТО БУДЕТ НЕПРАВИЛЬНО НИКАК НЕ ОТМЕТИТЬ ЭТОТ ДЕНЬ И НЕ ПОДЕЛИТЬСЯ СВОИМ ОПЫТОМ С ВАМИ<br>ПРИГЛАШАЮ ВАС НА СВОЙ ПРАЗДНИК, КОТОРЫЙ МЫ ОТМЕТИМ ДВУХДНЕВНЫМ МАСТЕР КЛАССОМ!<br>И, САМОЕ КЛАССНОЕ, МНЕ НЕВАЖНО КАКОЙ У ВАС УРОВЕНЬ В МАКИЯЖЕ, МОЙ МАСТЕР КЛАСС БУДЕТ ПОНЯТЕН КАЖДОМУ. МОЯ ЗАДАЧА ВДОХНОВИТЬ, НАУЧИТЬ И НАПОЛНИТЬ!</p>
@@ -409,7 +413,7 @@
         </div>
     </div>
 
-    <!-- МЕСТО И ВРЕМЯ -->
+    <!-- МЕСТО И ВРЕМЯ — КОМПАКТНО, БЕЗ ЛИШНИХ ОТСТУПОВ -->
     <div class="info-card">
         <div class="info-label">МЕСТО И ВРЕМЯ</div>
         <div class="info-block">
