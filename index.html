@@ -213,6 +213,7 @@
             text-align: center;
         }
 
+        /* ФИНАЛЬНОЕ ВСЁ! — ПО ЦЕНТРУ */
         .final-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
             font-size: 1.2rem;
@@ -259,14 +260,14 @@
             letter-spacing: 0.1em;
         }
 
-        /* ===== ДЕСКТОП — НЕСТАНДАРТНОЕ РАСПОЛОЖЕНИЕ ТЕКСТА ===== */
+        /* ===== ДЕСКТОП — ДЕРЗКОЕ РАСПОЛОЖЕНИЕ ===== */
         @media (min-width: 1024px) {
             .container {
                 max-width: 1000px;
                 padding: 3rem 3rem 5rem;
             }
 
-            /* ФОТО ПО ЦЕНТРУ, НО УВЕЛИЧЕННОЕ */
+            /* ФОТО УВЕЛИЧЕННОЕ */
             .photo-wrapper {
                 margin-bottom: 8rem;
             }
@@ -277,7 +278,7 @@
                 margin: 0 auto;
             }
 
-            /* ОСНОВНОЙ ТЕКСТ — РАЗНОЕ ВЫРАВНИВАНИЕ */
+            /* ДЕРЗКОЕ РАСПОЛОЖЕНИЕ ТЕКСТА */
             .main-text {
                 font-size: 1rem;
                 margin-bottom: 8rem;
@@ -290,49 +291,55 @@
                 margin-bottom: 5rem;
             }
 
-            /* ПЕРВЫЙ АБЗАЦ (ПРИВЕТСТВИЕ) — ВЫРАВНИВАНИЕ ПО ШИРИНЕ, НО С ОТСТУПАМИ */
+            /* ПЕРВЫЙ АБЗАЦ — ПО ЛЕВОМУ КРАЮ С БОЛЬШИМ ОТСТУПОМ СПРАВА */
             .main-text p:first-of-type {
-                text-align: justify;
-                margin-left: 2rem;
-                margin-right: 2rem;
-                margin-bottom: 5rem;
+                text-align: left;
+                margin-right: 30%;
+                margin-bottom: 4rem;
             }
 
-            /* ВТОРОЙ АБЗАЦ (ПРЕДЛОЖЕНИЕ ВЫБРАТЬ ФОРМАТ) — ПО ПРАВОМУ КРАЮ */
+            /* ВТОРОЙ АБЗАЦ — ПО ПРАВОМУ КРАЮ С БОЛЬШИМ ОТСТУПОМ СЛЕВА */
             .main-text p:last-of-type {
                 text-align: right;
-                margin-right: 2rem;
+                margin-left: 30%;
                 margin-bottom: 0;
             }
 
-            /* ЗАГОЛОВКИ ДНЕЙ — ПО ЦЕНТРУ, БОЛЬШЕ */
+            /* ЗАГОЛОВКИ ДНЕЙ — ПО ЛЕВОМУ КРАЮ */
             .day-title {
                 font-size: 1.3rem;
                 margin-bottom: 3rem;
-                text-align: center;
+                text-align: left;
             }
 
-            /* ПУНКТЫ СПИСКОВ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ С БОЛЬШИМИ ОТСТУПАМИ */
+            /* ПУНКТЫ СПИСКОВ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
             .feature-list li {
                 font-size: 0.95rem;
                 margin-bottom: 2.5rem;
                 line-height: 1.9;
                 text-align: justify;
-                margin-left: 1rem;
-                margin-right: 1rem;
             }
 
-            /* ЦЕНЫ — ПО ЦЕНТРУ, КРУПНЕЕ */
+            /* ЦЕНЫ — ПО ПРАВОМУ КРАЮ */
             .price-value {
                 font-size: 1.3rem;
+                text-align: right;
             }
 
-            /* ФИНАЛЬНОЕ ВСЁ! — ПО ПРАВОМУ КРАЮ */
+            .price-hint {
+                text-align: right;
+            }
+
+            /* МЕСТО И ВРЕМЯ — ПО ЦЕНТРУ */
+            .info-card {
+                margin: 6rem 0 6rem 0;
+            }
+
+            /* ФИНАЛЬНОЕ ВСЁ! — ПО ЦЕНТРУ (как ты просила) */
             .final-vsyo {
                 font-size: 1.5rem;
                 margin-bottom: 5rem;
-                text-align: right;
-                margin-right: 2rem;
+                text-align: center;
             }
 
             /* КНОПКА — ПО ЦЕНТРУ */
@@ -346,9 +353,6 @@
                 font-size: 0.75rem;
             }
 
-            .info-card {
-                margin: 6rem 0 6rem 0;
-            }
             .info-label {
                 font-size: 0.85rem;
             }
@@ -357,7 +361,7 @@
             }
         }
 
-        /* ПЛАНШЕТЫ — АДАПТАЦИЯ ДЕСКТОПНЫХ ПРАВИЛ */
+        /* ПЛАНШЕТЫ */
         @media (min-width: 768px) and (max-width: 1023px) {
             .frame {
                 max-width: 70%;
@@ -370,7 +374,7 @@
             }
         }
 
-        /* МОБИЛКИ — НЕ ТРОГАЕМ, ВСЁ КАК БЫЛО */
+        /* МОБИЛКИ — НЕ ТРОГАЕМ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
