@@ -60,7 +60,7 @@
         .photo-wrapper {
             display: flex;
             justify-content: center;
-            margin-bottom: 8rem;
+            margin-bottom: 6rem;
         }
 
         .frame {
@@ -144,7 +144,6 @@
             margin-bottom: 1.5rem;
         }
 
-        /* УВЕЛИЧЕННЫЕ ОТСТУПЫ МЕЖДУ СМЫСЛОВЫМИ БЛОКАМИ В СПИСКАХ */
         .feature-list li {
             font-size: 0.85rem;
             font-weight: 500;
@@ -260,6 +259,7 @@
             letter-spacing: 0.1em;
         }
 
+        /* МОБИЛКИ — НЕ ТРОГАЕМ, ВСЁ ТОЧНО КАК ТЫ ЗАПОМНИЛА */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
@@ -354,15 +354,174 @@
             }
         }
 
-        @media (min-width: 551px) {
+        @media (min-width: 551px) and (max-width: 767px) {
             .frame {
                 max-width: 55%;
             }
         }
 
-        @media (min-width: 768px) {
+        /* ДЕСКТОП — ФОТО НА ВЕСЬ ЭКРАН И НЕОБЫЧНОЕ РАСПОЛОЖЕНИЕ ТЕКСТА */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+                padding: 0;
+            }
+
+            /* ФОТО НА ВСЮ ШИРИНУ ЭКРАНА */
+            .photo-wrapper {
+                margin-bottom: 5rem;
+                margin-left: -2rem;
+                margin-right: -2rem;
+                width: calc(100% + 4rem);
+            }
             .frame {
-                max-width: 50%;
+                width: 100%;
+                max-width: 100%;
+                display: block;
+            }
+            .frame img {
+                width: 100%;
+                height: auto;
+                max-height: 80vh;
+                object-fit: cover;
+            }
+
+            /* ЗАГОЛОВОК ОСТАЁТСЯ ПО ЦЕНТРУ, НО С БОЛЬШИМИ ПОЛЯМИ */
+            .title-wrapper {
+                margin: 4rem 0 2rem 0;
+                padding: 0 2rem;
+            }
+
+            /* ОСНОВНОЙ КОНТЕЙНЕР ДЛЯ ТЕКСТА — ДВЕ КОЛОНКИ */
+            .main-text {
+                max-width: 1200px;
+                margin: 0 auto 6rem auto;
+                padding: 0 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4rem;
+            }
+
+            .main-text .greeting {
+                flex: 0 0 100%;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            /* ПЕРВЫЙ АБЗАЦ — ЛЕВАЯ КОЛОНКА (40% ширины) */
+            .main-text p:first-of-type {
+                flex: 1;
+                text-align: left;
+                font-size: 1rem;
+                line-height: 1.8;
+                margin-bottom: 0;
+            }
+
+            /* ВТОРОЙ АБЗАЦ — ПРАВАЯ КОЛОНКА (40% ширины) */
+            .main-text p:last-of-type {
+                flex: 1;
+                text-align: right;
+                font-size: 1rem;
+                line-height: 1.8;
+                margin-bottom: 0;
+            }
+
+            /* КАРТОЧКИ ДНЕЙ — В ДВЕ КОЛОНКИ */
+            .days-wrapper {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 2rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 4rem;
+            }
+
+            .day-card {
+                flex: 1;
+                border-top: none;
+                padding: 0;
+                margin-bottom: 0;
+            }
+
+            .day-card:first-of-type {
+                border-right: 1px solid rgba(0, 0, 0, 0.15);
+                padding-right: 2rem;
+            }
+
+            .day-card:last-of-type {
+                padding-left: 2rem;
+            }
+
+            .day-badge {
+                text-align: left;
+                margin-bottom: 1rem;
+            }
+
+            .day-title {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+
+            .feature-list li {
+                font-size: 0.9rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .price-block {
+                text-align: left;
+                margin-top: 1.5rem;
+            }
+
+            .price-value {
+                text-align: left;
+            }
+
+            .price-hint {
+                text-align: left;
+            }
+
+            /* БЛОК МЕСТО И ВРЕМЯ — ПО ЦЕНТРУ, НО УЗКИЙ */
+            .info-card {
+                max-width: 800px;
+                margin: 6rem auto;
+                padding: 2rem 0;
+            }
+
+            .final-vsyo {
+                font-size: 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+            .ticket-button-wrapper {
+                margin: 0 0 3rem 0;
+            }
+
+            .ticket-btn {
+                font-size: 0.85rem;
+                padding: 1rem 2rem;
+                min-width: 250px;
+            }
+
+            .footer {
+                max-width: 1200px;
+                margin: 0 auto 3rem auto;
+                padding: 1.5rem 2rem 0 2rem;
+            }
+        }
+
+        /* ПЛАНШЕТЫ (768-1023px) — АДАПТАЦИЯ, НЕ ТРОГАЕМ МОБИЛКУ */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                padding: 2rem 1.5rem 3rem;
+            }
+            .frame {
+                max-width: 70%;
+            }
+            .main-text {
+                font-size: 0.9rem;
+            }
+            .feature-list li {
+                font-size: 0.85rem;
             }
         }
     </style>
@@ -389,34 +548,36 @@
         <p>Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
     </div>
 
-    <div class="day-card">
-        <div class="day-badge">ПРОГРАММА МАСТЕР КЛАССА</div>
-        <div class="day-title">ПОСМОТРЕТЬ, ПОСЛУШАТЬ, ПОСПРАШИВАТЬ<br>ДЕНЬ ПЕРВЫЙ.</div>
-        <ul class="feature-list">
-            <li>ОСОБЕННЫЙ И ОЧЕНЬ НАПОЛНЕННЫЙ ДЕНЬ,   В КОТОРОМ Я ПОКАЖУ ВАМ 2 СВОИХ САМЫХ ЛЮБИМЫХ МЕЙКА,   НО         В НАЧАЛЕ БУДЕТ ВАЖНЫЙ БЛОК ТЕОРИИ  С  ВОЗМОЖНОСТЬЮ ЗАДАВАТЬ ВОПРОСЫ</li>
-            <li><strong>1.ТОТ САМЫЙ НЮД.</strong>   РАССКАЖУ ПРО ТО, КАК СДЕЛАТЬ КРАСИВУЮ КОЖУ,   ПРО АНАТОМИЮ ЛИЦА,   И          ВАЖНЫЕ МОМЕНТЫ В РАБОТЕ С КЛИЕНТОМ.      ПРО ОТЛИЧИЯ РАБОТЫ НА СЪЕМКАХ, НА СЦЕНЕ И В ЖИЗНИ,      А ТАКЖЕ ПРО ТО,   КАК ВЕДЕТ СЕБЯ МАКИЯЖ В ТЕ ИЛИ ИНЫЕ МОМЕНТЫ.</li>
-            <li>ПОСЛЕ МЫ СДЕЛАЕМ ПЕРЕРЫВ НА КОФЕ ИЛИ ШАМПАНСКОЕ,  КТО ЧТО БОЛЬШЕ ЛЮБИТ  </li>
-            <li><strong>2.ПОКАЗ МОИХ ФИРМЕННЫХ СМОКИ, А ТАКЖЕ ИХ ТРАНСФОРМАЦИЯ.</strong>   ПОКАЖУ КАК ГУБЫ МОГУТ МЕНЯТЬ НАСТРОЕНИЕ В МАКИЯЖЕ.   РАССКАЖУ ПРО ТЕНДЕНЦИИ И КАК ИХ ОТСЛЕЖИВАТЬ,   ПРО ТО ГДЕ ИСКАТЬ КЛИЕНТОВ   И         РАБОТАТЬ НА КРУПНЫХ ПРОЕКТАХ.</li>
-            <li>В КОНЦЕ БУДЕТ ВРЕМЯ ДЛЯ ЛЮБЫХ ВАШИХ ВОПРОСОВ,      НО  Я С УДОВОЛЬСТВИЕМ БУДУ       ОТВЕЧАТЬ НА НИХ И ВО ВРЕМЯ МАСТЕР КЛАССА   (ЕСЛИ ОНИ БУДУТ ПО ТЕМЕ,  ЧТОБЫ Я НЕ ЗАПУТАЛАСЬ В МЫСЛЯХ  :))</li>
-        </ul>
-        <div class="price-block">
-            <div class="price-value">25 000 ₽</div>
-            <div class="price-hint">ПРОДОЛЖИТЕЛЬНОСТЬ 5 ЧАСОВ</div>
+    <div class="days-wrapper">
+        <div class="day-card">
+            <div class="day-badge">ПРОГРАММА МАСТЕР КЛАССА</div>
+            <div class="day-title">ПОСМОТРЕТЬ, ПОСЛУШАТЬ, ПОСПРАШИВАТЬ<br>ДЕНЬ ПЕРВЫЙ.</div>
+            <ul class="feature-list">
+                <li>ОСОБЕННЫЙ И ОЧЕНЬ НАПОЛНЕННЫЙ ДЕНЬ,   В КОТОРОМ Я ПОКАЖУ ВАМ 2 СВОИХ САМЫХ ЛЮБИМЫХ МЕЙКА,   НО         В НАЧАЛЕ БУДЕТ ВАЖНЫЙ БЛОК ТЕОРИИ  С  ВОЗМОЖНОСТЬЮ ЗАДАВАТЬ ВОПРОСЫ</li>
+                <li><strong>1.ТОТ САМЫЙ НЮД.</strong>   РАССКАЖУ ПРО ТО, КАК СДЕЛАТЬ КРАСИВУЮ КОЖУ,   ПРО АНАТОМИЮ ЛИЦА,   И          ВАЖНЫЕ МОМЕНТЫ В РАБОТЕ С КЛИЕНТОМ.      ПРО ОТЛИЧИЯ РАБОТЫ НА СЪЕМКАХ, НА СЦЕНЕ И В ЖИЗНИ,      А ТАКЖЕ ПРО ТО,   КАК ВЕДЕТ СЕБЯ МАКИЯЖ В ТЕ ИЛИ ИНЫЕ МОМЕНТЫ.</li>
+                <li>ПОСЛЕ МЫ СДЕЛАЕМ ПЕРЕРЫВ НА КОФЕ ИЛИ ШАМПАНСКОЕ,  КТО ЧТО БОЛЬШЕ ЛЮБИТ  </li>
+                <li><strong>2.ПОКАЗ МОИХ ФИРМЕННЫХ СМОКИ, А ТАКЖЕ ИХ ТРАНСФОРМАЦИЯ.</strong>   ПОКАЖУ КАК ГУБЫ МОГУТ МЕНЯТЬ НАСТРОЕНИЕ В МАКИЯЖЕ.   РАССКАЖУ ПРО ТЕНДЕНЦИИ И КАК ИХ ОТСЛЕЖИВАТЬ,   ПРО ТО ГДЕ ИСКАТЬ КЛИЕНТОВ   И         РАБОТАТЬ НА КРУПНЫХ ПРОЕКТАХ.</li>
+                <li>В КОНЦЕ БУДЕТ ВРЕМЯ ДЛЯ ЛЮБЫХ ВАШИХ ВОПРОСОВ,      НО  Я С УДОВОЛЬСТВИЕМ БУДУ       ОТВЕЧАТЬ НА НИХ И ВО ВРЕМЯ МАСТЕР КЛАССА   (ЕСЛИ ОНИ БУДУТ ПО ТЕМЕ,  ЧТОБЫ Я НЕ ЗАПУТАЛАСЬ В МЫСЛЯХ  :))</li>
+            </ul>
+            <div class="price-block">
+                <div class="price-value">25 000 ₽</div>
+                <div class="price-hint">ПРОДОЛЖИТЕЛЬНОСТЬ 5 ЧАСОВ</div>
+            </div>
         </div>
-    </div>
 
-    <div class="day-card">
-        <div class="day-badge">ДЕНЬ 2</div>
-        <div class="day-title">СЕКСИ-НАСТРОЕНИЕ И ОТРАБОТКА</div>
-        <ul class="feature-list">
-            <li>ЭТОТ ДЕНЬ ПРОДОЛЖЕНИЕ ПЕРВОГО,      НО  К СОЖАЛЕНИЮ ЗДЕСЬ КОЛИЧЕСТВО МЕСТ ОЧЕНЬ ОГРАНИЧЕНО,         ПОТОМУ ЧТО ЗДЕСЬ БУДЕТ ОТРАБОТКА  И        ДЛЯ МЕНЯ ВАЖНО БЫТЬ С КАЖДЫМ РЯДОМ,      ПОМОЧЬ И ПОСТАВИТЬ РУКУ  ,     ЕСЛИ ПОНАДОБИТСЯ</li>
-            <li>НО ПОМИМО ОТРАБОТКИ ВАС БУДЕТ ЖДАТЬ ЕЩЕ ОДИН ПОКАЗ НА МОДЕЛИ — НАЗОВУ ЕГО <strong>СЕКСИ</strong>,   ПОТОМУ ЧТО ДЛЯ МЕНЯ ЭТО ОСОБЕННОЕ НАСТРОЕНИЕ,   КОТОРОЕ Я ПЕРЕДАЮ ЖЕНЩИНАМ С ПОМОЩЬЮ МЕЙКА.    А СЕКСИ БЕЗ СТРЕЛОК…. БЫТЬ НЕ МОЖЕТ,   ПОЭТОМУ Я ПОКАЖУ ИХ ВАМ    И  РАССКАЖУ, КАК РИСОВАТЬ ИХ НА ЛЮБОМ ВЕКЕ,   КОНЕЧНО В СОВРЕМЕННОЙ ИНТЕРПРЕТАЦИИ  И   ЧЕРЕЗ СВОЕ ВИДЕНЬЕ</li>
-            <li>ЗДЕСЬ ВАС БУДЕТ ВСЕГО 10 ЧЕЛОВЕК,         ПОЭТОМУ СМОЖЕМ ОБСУДИТЬ  И  РАССМОТРЕТЬ САМЫЕ МЕЛКИЕ ДЕТАЛИ !</li>
-            <li>Я ПРЕДОСТАВЛЮ СВОЙ КЕЙС ДЛЯ ОТРАБОТКИ,   НО НУЖНЫ БУДУТ СОБСТВЕННЫЕ КИСТИ      (ЕСЛИ ЗАХОТИТЕ ОТРАБОТАТЬ НА СВОЕЙ КОСМЕТИКЕ,  ТО ЭТО ТОЛЬКО ПРИВЕТСТВУЕТСЯ  ,      ТАК КАК ВАМ БУДЕТ ПРОЩЕ В ДАЛЬНЕЙШЕМ)</li>
-        </ul>
-        <div class="price-block">
-            <div class="price-value">60 000 ₽</div>
-            <div class="price-hint">СТОИМОСТЬ ЗА ОБА ДНЯ</div>
+        <div class="day-card">
+            <div class="day-badge">ДЕНЬ 2</div>
+            <div class="day-title">СЕКСИ-НАСТРОЕНИЕ И ОТРАБОТКА</div>
+            <ul class="feature-list">
+                <li>ЭТОТ ДЕНЬ ПРОДОЛЖЕНИЕ ПЕРВОГО,      НО  К СОЖАЛЕНИЮ ЗДЕСЬ КОЛИЧЕСТВО МЕСТ ОЧЕНЬ ОГРАНИЧЕНО,         ПОТОМУ ЧТО ЗДЕСЬ БУДЕТ ОТРАБОТКА  И        ДЛЯ МЕНЯ ВАЖНО БЫТЬ С КАЖДЫМ РЯДОМ,      ПОМОЧЬ И ПОСТАВИТЬ РУКУ  ,     ЕСЛИ ПОНАДОБИТСЯ</li>
+                <li>НО ПОМИМО ОТРАБОТКИ ВАС БУДЕТ ЖДАТЬ ЕЩЕ ОДИН ПОКАЗ НА МОДЕЛИ — НАЗОВУ ЕГО <strong>СЕКСИ</strong>,   ПОТОМУ ЧТО ДЛЯ МЕНЯ ЭТО ОСОБЕННОЕ НАСТРОЕНИЕ,   КОТОРОЕ Я ПЕРЕДАЮ ЖЕНЩИНАМ С ПОМОЩЬЮ МЕЙКА.    А СЕКСИ БЕЗ СТРЕЛОК…. БЫТЬ НЕ МОЖЕТ,   ПОЭТОМУ Я ПОКАЖУ ИХ ВАМ    И  РАССКАЖУ, КАК РИСОВАТЬ ИХ НА ЛЮБОМ ВЕКЕ,   КОНЕЧНО В СОВРЕМЕННОЙ ИНТЕРПРЕТАЦИИ  И   ЧЕРЕЗ СВОЕ ВИДЕНЬЕ</li>
+                <li>ЗДЕСЬ ВАС БУДЕТ ВСЕГО 10 ЧЕЛОВЕК,         ПОЭТОМУ СМОЖЕМ ОБСУДИТЬ  И     РАССМОТРЕТЬ САМЫЕ МЕЛКИЕ ДЕТАЛИ !</li>
+                <li>Я ПРЕДОСТАВЛЮ СВОЙ КЕЙС ДЛЯ ОТРАБОТКИ,   НО НУЖНЫ БУДУТ СОБСТВЕННЫЕ КИСТИ      (ЕСЛИ ЗАХОТИТЕ ОТРАБОТАТЬ НА СВОЕЙ КОСМЕТИКЕ,  ТО ЭТО ТОЛЬКО ПРИВЕТСТВУЕТСЯ  ,      ТАК КАК ВАМ БУДЕТ ПРОЩЕ В ДАЛЬНЕЙШЕМ)</li>
+            </ul>
+            <div class="price-block">
+                <div class="price-value">60 000 ₽</div>
+                <div class="price-hint">СТОИМОСТЬ ЗА ОБА ДНЯ</div>
+            </div>
         </div>
     </div>
 
