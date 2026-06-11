@@ -354,42 +354,37 @@
             }
         }
 
-        /* ДЕСКТОП — ВЛЕВО/ВПРАВО, ФОТО ЧУТЬ МЕНЬШЕ */
+        /* ДЕСКТОП — КАК НА СКРИНШОТЕ */
         @media (min-width: 768px) {
             .container {
                 max-width: 800px;
                 padding: 3rem 2rem 5rem;
             }
 
-            /* ФОТО ЧУТЬ МЕНЬШЕ */
             .frame {
                 max-width: 80%;
             }
 
             .main-text {
                 font-size: 0.9rem;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                gap: 2rem;
             }
 
             .main-text .greeting {
-                flex: 0 0 100%;
                 text-align: center;
                 margin-bottom: 4rem;
             }
 
-            /* ПЕРВЫЙ АБЗАЦ — ВЛЕВО (60% ширины) */
+            /* ОСНОВНОЙ АБЗАЦ — ПО ЦЕНТРУ, НО УЖЕ, С ОТСТУПАМИ */
             .main-text p:first-of-type {
-                flex: 1;
-                text-align: left;
-                margin-bottom: 0;
+                text-align: justify;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 4rem;
             }
 
-            /* ВТОРОЙ АБЗАЦ — ВПРАВО (35% ширины) */
+            /* ФРАЗА — ПО ПРАВОМУ КРАЮ */
             .main-text p:last-of-type {
-                flex: 0 0 35%;
                 text-align: right;
                 margin-bottom: 0;
             }
