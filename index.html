@@ -354,25 +354,46 @@
             }
         }
 
-        /* ДЕСКТОП — ФОТО РАСТЯНУТО ПО ШИРИНЕ */
+        /* ДЕСКТОП — ВЛЕВО/ВПРАВО, ФОТО ЧУТЬ МЕНЬШЕ */
         @media (min-width: 768px) {
             .container {
                 max-width: 800px;
                 padding: 3rem 2rem 5rem;
             }
-            /* ФОТО НА ВСЮ ШИРИНУ КОНТЕЙНЕРА */
-            .photo-wrapper {
-                margin-left: -2rem;
-                margin-right: -2rem;
-                width: calc(100% + 4rem);
-            }
+
+            /* ФОТО ЧУТЬ МЕНЬШЕ */
             .frame {
-                width: 100%;
-                max-width: 100%;
+                max-width: 80%;
             }
+
             .main-text {
                 font-size: 0.9rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 2rem;
             }
+
+            .main-text .greeting {
+                flex: 0 0 100%;
+                text-align: center;
+                margin-bottom: 4rem;
+            }
+
+            /* ПЕРВЫЙ АБЗАЦ — ВЛЕВО (60% ширины) */
+            .main-text p:first-of-type {
+                flex: 1;
+                text-align: left;
+                margin-bottom: 0;
+            }
+
+            /* ВТОРОЙ АБЗАЦ — ВПРАВО (35% ширины) */
+            .main-text p:last-of-type {
+                flex: 0 0 35%;
+                text-align: right;
+                margin-bottom: 0;
+            }
+
             .feature-list li {
                 font-size: 0.85rem;
             }
@@ -394,6 +415,9 @@
         @media (min-width: 1024px) {
             .container {
                 max-width: 900px;
+            }
+            .frame {
+                max-width: 70%;
             }
         }
     </style>
