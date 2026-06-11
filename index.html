@@ -354,20 +354,21 @@
             }
         }
 
-        @media (min-width: 551px) and (max-width: 767px) {
-            .frame {
-                max-width: 55%;
-            }
-        }
-
-        /* ДЕСКТОП — ВСЁ ПО СТАРОМУ, НО ФОТО НОРМАЛЬНОГО РАЗМЕРА */
+        /* ДЕСКТОП — ФОТО РАСТЯНУТО ПО ШИРИНЕ */
         @media (min-width: 768px) {
             .container {
-                max-width: 680px;
+                max-width: 800px;
                 padding: 3rem 2rem 5rem;
             }
+            /* ФОТО НА ВСЮ ШИРИНУ КОНТЕЙНЕРА */
+            .photo-wrapper {
+                margin-left: -2rem;
+                margin-right: -2rem;
+                width: calc(100% + 4rem);
+            }
             .frame {
-                max-width: 70%;
+                width: 100%;
+                max-width: 100%;
             }
             .main-text {
                 font-size: 0.9rem;
@@ -391,8 +392,8 @@
         }
 
         @media (min-width: 1024px) {
-            .frame {
-                max-width: 60%;
+            .container {
+                max-width: 900px;
             }
         }
     </style>
