@@ -213,7 +213,6 @@
             text-align: center;
         }
 
-        /* ФИНАЛЬНОЕ ВСЁ! — ПО ЦЕНТРУ */
         .final-vsyo {
             font-family: 'Inter', 'Helvetica Neue', sans-serif;
             font-size: 1.2rem;
@@ -260,14 +259,13 @@
             letter-spacing: 0.1em;
         }
 
-        /* ===== ДЕСКТОП — ДЕРЗКОЕ РАСПОЛОЖЕНИЕ ===== */
+        /* ===== ДЕСКТОП — КАК В ПРИМЕРЕ RHODE ===== */
         @media (min-width: 1024px) {
             .container {
                 max-width: 1000px;
                 padding: 3rem 3rem 5rem;
             }
 
-            /* ФОТО УВЕЛИЧЕННОЕ */
             .photo-wrapper {
                 margin-bottom: 8rem;
             }
@@ -278,7 +276,6 @@
                 margin: 0 auto;
             }
 
-            /* ДЕРЗКОЕ РАСПОЛОЖЕНИЕ ТЕКСТА */
             .main-text {
                 font-size: 1rem;
                 margin-bottom: 8rem;
@@ -291,28 +288,26 @@
                 margin-bottom: 5rem;
             }
 
-            /* ПЕРВЫЙ АБЗАЦ — ПО ЛЕВОМУ КРАЮ С БОЛЬШИМ ОТСТУПОМ СПРАВА */
+            /* ПЕРВЫЙ АБЗАЦ — КАК В ПРИМЕРЕ: КОРОТКИЕ СТРОКИ С БОЛЬШИМИ ПРОБЕЛАМИ */
             .main-text p:first-of-type {
                 text-align: left;
-                margin-right: 30%;
+                line-height: 2.2;
                 margin-bottom: 4rem;
+                white-space: normal;
             }
 
-            /* ВТОРОЙ АБЗАЦ — ПО ПРАВОМУ КРАЮ С БОЛЬШИМ ОТСТУПОМ СЛЕВА */
+            /* ВТОРОЙ АБЗАЦ — ПО ПРАВОМУ КРАЮ */
             .main-text p:last-of-type {
                 text-align: right;
-                margin-left: 30%;
                 margin-bottom: 0;
             }
 
-            /* ЗАГОЛОВКИ ДНЕЙ — ПО ЛЕВОМУ КРАЮ */
             .day-title {
                 font-size: 1.3rem;
                 margin-bottom: 3rem;
                 text-align: left;
             }
 
-            /* ПУНКТЫ СПИСКОВ — ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
             .feature-list li {
                 font-size: 0.95rem;
                 margin-bottom: 2.5rem;
@@ -320,7 +315,6 @@
                 text-align: justify;
             }
 
-            /* ЦЕНЫ — ПО ПРАВОМУ КРАЮ */
             .price-value {
                 font-size: 1.3rem;
                 text-align: right;
@@ -330,19 +324,16 @@
                 text-align: right;
             }
 
-            /* МЕСТО И ВРЕМЯ — ПО ЦЕНТРУ */
             .info-card {
                 margin: 6rem 0 6rem 0;
             }
 
-            /* ФИНАЛЬНОЕ ВСЁ! — ПО ЦЕНТРУ (как ты просила) */
             .final-vsyo {
                 font-size: 1.5rem;
                 margin-bottom: 5rem;
                 text-align: center;
             }
 
-            /* КНОПКА — ПО ЦЕНТРУ */
             .ticket-btn {
                 font-size: 0.9rem;
                 padding: 1rem 2.5rem;
@@ -361,7 +352,6 @@
             }
         }
 
-        /* ПЛАНШЕТЫ */
         @media (min-width: 768px) and (max-width: 1023px) {
             .frame {
                 max-width: 70%;
@@ -493,7 +483,20 @@
     <div class="main-text">
         <div class="greeting">ВСЕМ ПРИВЕТ!</div>
 
-        <p>Я ПОДУМАЛА, ЧТО БУДЕТ НЕПРАВИЛЬНО НИКАК НЕ ОТМЕТИТЬ ЭТОТ ДЕНЬ   И             НЕ ПОДЕЛИТЬСЯ СВОИМ ОПЫТОМ С ВАМИ.  ПРИГЛАШАЮ ВАС НА СВОЙ ПРАЗДНИК,   КОТОРЫЙ МЫ ОТМЕТИМ ДВУХДНЕВНЫМ МАСТЕР КЛАССОМ!   И,            САМОЕ КЛАССНОЕ,       МНЕ НЕВАЖНО КАКОЙ У ВАС УРОВЕНЬ В МАКИЯЖЕ,        МОЙ МАСТЕР КЛАСС БУДЕТ ПОНЯТЕН КАЖДОМУ.     МОЯ ЗАДАЧА ВДОХНОВИТЬ, НАУЧИТЬ И НАПОЛНИТЬ!</p>
+        <!-- ПЕРВЫЙ АБЗАЦ — ТОЧЬ-В-ТОЧЬ КАК В ПРИМЕРЕ RHODE (КОРОТКИЕ СТРОКИ С БОЛЬШИМИ ПРОБЕЛАМИ) -->
+        <p>Я ПОДУМАЛА, ЧТО БУДЕТ НЕПРАВИЛЬНО<br>
+        НИКАК НЕ ОТМЕТИТЬ ЭТОТ ДЕНЬ<br>
+        И НЕ ПОДЕЛИТЬСЯ СВОИМ ОПЫТОМ С ВАМИ.<br>
+        <br>
+        ПРИГЛАШАЮ ВАС НА СВОЙ ПРАЗДНИК,<br>
+        КОТОРЫЙ МЫ ОТМЕТИМ ДВУХДНЕВНЫМ МАСТЕР КЛАССОМ!<br>
+        <br>
+        И, САМОЕ КЛАССНОЕ,<br>
+        МНЕ НЕВАЖНО КАКОЙ У ВАС УРОВЕНЬ В МАКИЯЖЕ,<br>
+        МОЙ МАСТЕР КЛАСС БУДЕТ ПОНЯТЕН КАЖДОМУ.<br>
+        <br>
+        МОЯ ЗАДАЧА —<br>
+        ВДОХНОВИТЬ, НАУЧИТЬ И НАПОЛНИТЬ!</p>
 
         <p>Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
     </div>
