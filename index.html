@@ -354,91 +354,90 @@
             }
         }
 
-        /* ДЕСКТОП — ТЕКСТ ЛЕВЕЕ, КАК НА СКРИНШОТЕ */
+        /* ДЕСКТОП — ВСЕ ПО ЦЕНТРУ, КРОМЕ "Я ПРЕДЛАГАЮ..." (ВПРАВО) */
         @media (min-width: 768px) {
             .container {
                 max-width: 800px;
                 padding: 3rem 2rem 5rem;
             }
 
-            /* ЗАГОЛОВОК И ФОТО ПО ЦЕНТРУ (НЕ ТРОГАЕМ) */
-            .title-wrapper {
-                text-align: center;
-            }
-            .photo-wrapper {
-                justify-content: center;
-            }
             .frame {
                 max-width: 80%;
             }
 
-            /* ВЕСЬ ТЕКСТ ЛЕВЕЕ */
             .main-text {
-                text-align: left;
-                max-width: 90%;
-                margin-left: 0;
-                margin-right: auto;
+                text-align: center;
             }
 
             .main-text .greeting {
-                text-align: left;
-                margin-bottom: 2rem;
+                text-align: center;
+                margin-bottom: 3rem;
             }
 
+            /* ОСНОВНОЙ АБЗАЦ — ПО ЦЕНТРУ, НО УЖЕ */
             .main-text p:first-of-type {
-                text-align: left;
-                margin-bottom: 2rem;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: justify;
+                margin-bottom: 3rem;
             }
 
+            /* ФРАЗА — ВПРАВО */
             .main-text p:last-of-type {
-                text-align: left;
+                text-align: right;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
                 margin-bottom: 0;
             }
 
-            /* КАРТОЧКИ ДНЕЙ ТОЖЕ ЛЕВЕЕ */
+            /* ЗАГОЛОВКИ ДНЕЙ, СПИСКИ, ЦЕНЫ — ПО ЦЕНТРУ */
             .day-card {
-                text-align: left;
+                text-align: center;
             }
             .day-badge {
-                text-align: left;
+                text-align: center;
             }
             .day-title {
-                text-align: left;
+                text-align: center;
             }
             .feature-list li {
-                text-align: left;
+                text-align: justify;
+                max-width: 80%;
+                margin-left: auto;
+                margin-right: auto;
             }
             .price-block {
-                text-align: left;
+                text-align: center;
             }
             .price-value {
-                text-align: left;
+                text-align: center;
             }
             .price-hint {
-                text-align: left;
+                text-align: center;
             }
 
             .info-card {
-                text-align: left;
-                margin: 6rem 0 6rem 0;
+                text-align: center;
             }
             .info-label {
-                text-align: left;
+                text-align: center;
             }
             .info-block p {
-                text-align: left;
+                text-align: center;
             }
 
             .final-vsyo {
-                text-align: left;
+                text-align: center;
             }
 
             .ticket-button-wrapper {
-                text-align: left;
+                text-align: center;
             }
 
             .footer {
-                text-align: left;
+                text-align: center;
             }
         }
 
@@ -449,8 +448,14 @@
             .frame {
                 max-width: 70%;
             }
-            .main-text {
-                max-width: 85%;
+            .main-text p:first-of-type {
+                max-width: 75%;
+            }
+            .main-text p:last-of-type {
+                max-width: 75%;
+            }
+            .feature-list li {
+                max-width: 75%;
             }
         }
     </style>
