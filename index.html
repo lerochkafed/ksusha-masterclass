@@ -354,56 +354,91 @@
             }
         }
 
-        /* ДЕСКТОП — КАК НА СКРИНШОТЕ */
+        /* ДЕСКТОП — ТЕКСТ ЛЕВЕЕ, КАК НА СКРИНШОТЕ */
         @media (min-width: 768px) {
             .container {
                 max-width: 800px;
                 padding: 3rem 2rem 5rem;
             }
 
+            /* ЗАГОЛОВОК И ФОТО ПО ЦЕНТРУ (НЕ ТРОГАЕМ) */
+            .title-wrapper {
+                text-align: center;
+            }
+            .photo-wrapper {
+                justify-content: center;
+            }
             .frame {
                 max-width: 80%;
             }
 
+            /* ВЕСЬ ТЕКСТ ЛЕВЕЕ */
             .main-text {
-                font-size: 0.9rem;
+                text-align: left;
+                max-width: 90%;
+                margin-left: 0;
+                margin-right: auto;
             }
 
             .main-text .greeting {
-                text-align: center;
-                margin-bottom: 4rem;
+                text-align: left;
+                margin-bottom: 2rem;
             }
 
-            /* ОСНОВНОЙ АБЗАЦ — ПО ЦЕНТРУ, НО УЖЕ, С ОТСТУПАМИ */
             .main-text p:first-of-type {
-                text-align: justify;
-                max-width: 80%;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 4rem;
+                text-align: left;
+                margin-bottom: 2rem;
             }
 
-            /* ФРАЗА — ПО ПРАВОМУ КРАЮ */
             .main-text p:last-of-type {
-                text-align: right;
+                text-align: left;
                 margin-bottom: 0;
             }
 
-            .feature-list li {
-                font-size: 0.85rem;
+            /* КАРТОЧКИ ДНЕЙ ТОЖЕ ЛЕВЕЕ */
+            .day-card {
+                text-align: left;
+            }
+            .day-badge {
+                text-align: left;
             }
             .day-title {
-                font-size: 1rem;
+                text-align: left;
+            }
+            .feature-list li {
+                text-align: left;
+            }
+            .price-block {
+                text-align: left;
             }
             .price-value {
-                font-size: 1rem;
+                text-align: left;
             }
+            .price-hint {
+                text-align: left;
+            }
+
+            .info-card {
+                text-align: left;
+                margin: 6rem 0 6rem 0;
+            }
+            .info-label {
+                text-align: left;
+            }
+            .info-block p {
+                text-align: left;
+            }
+
             .final-vsyo {
-                font-size: 1.2rem;
+                text-align: left;
             }
-            .ticket-btn {
-                font-size: 0.75rem;
-                padding: 1rem 2rem;
+
+            .ticket-button-wrapper {
+                text-align: left;
+            }
+
+            .footer {
+                text-align: left;
             }
         }
 
@@ -413,6 +448,9 @@
             }
             .frame {
                 max-width: 70%;
+            }
+            .main-text {
+                max-width: 85%;
             }
         }
     </style>
