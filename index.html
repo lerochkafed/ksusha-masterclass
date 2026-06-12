@@ -354,7 +354,7 @@
             }
         }
 
-        /* ДЕСКТОП — ОСНОВНОЙ АБЗАЦ СДВИНУТ ВЛЕВО */
+        /* ДЕСКТОП — НЕОБЫЧНОЕ РАСПОЛОЖЕНИЕ ТОЛЬКО ДЛЯ ЭТИХ ДВУХ БЛОКОВ */
         @media (min-width: 768px) {
             .container {
                 max-width: 800px;
@@ -371,22 +371,23 @@
                 margin-bottom: 3rem;
             }
 
-            /* ОСНОВНОЙ АБЗАЦ — ВЛЕВО */
+            /* ОСНОВНОЙ АБЗАЦ — ДВЕ КОЛОНКИ (НЕОБЫЧНО) */
             .main-text p:first-of-type {
+                column-count: 2;
+                column-gap: 2rem;
                 text-align: justify;
-                max-width: 85%;
-                margin-left: 0;
-                margin-right: auto;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
             }
 
-            /* ФРАЗА — ВПРАВО */
+            /* ФРАЗА — ПО ПРАВОМУ КРАЮ, С НЕОБЫЧНЫМ ОТСТУПОМ */
             .main-text p:last-of-type {
                 text-align: right;
-                max-width: 85%;
+                max-width: 70%;
                 margin-left: auto;
                 margin-right: 0;
                 margin-bottom: 0;
+                padding-top: 1rem;
+                border-top: 1px solid rgba(0, 0, 0, 0.1);
             }
 
             /* ОСТАЛЬНЫЕ ЭЛЕМЕНТЫ — ПО ЦЕНТРУ */
@@ -446,10 +447,10 @@
                 max-width: 70%;
             }
             .main-text p:first-of-type {
-                max-width: 80%;
+                column-gap: 2.5rem;
             }
             .main-text p:last-of-type {
-                max-width: 80%;
+                max-width: 60%;
             }
             .feature-list li {
                 max-width: 80%;
