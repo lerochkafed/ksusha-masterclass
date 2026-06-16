@@ -259,6 +259,7 @@
             letter-spacing: 0.1em;
         }
 
+        /* МОБИЛКИ — НЕ ТРОГАЕМ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
@@ -362,6 +363,105 @@
         @media (min-width: 768px) {
             .frame {
                 max-width: 50%;
+            }
+        }
+
+        /* ===== ДЕСКТОП — РАСШИРЕННЫЙ ТЕКСТ И ФОТО ===== */
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1000px;
+                padding: 3rem 2rem 5rem;
+            }
+
+            /* ФОТО РАСТЯНУТО ПО ВСЕЙ ШИРИНЕ КОНТЕЙНЕРА */
+            .photo-wrapper {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+            }
+            .frame {
+                width: 100%;
+                max-width: 100%;
+            }
+            .frame img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            /* УВЕЛИЧЕННЫЙ ОТСТУП ОТ ФОТО ДО ВСЕМ ПРИВЕТ! */
+            .photo-wrapper {
+                margin-bottom: 10rem;
+            }
+
+            /* ТЕКСТ РАСШИРЕН ПО ВСЕЙ ШИРИНЕ (КАК ДВЕ КОЛОНКИ НА СКРИНШОТЕ) */
+            .main-text {
+                max-width: 100%;
+                padding: 0;
+            }
+
+            .main-text .greeting {
+                text-align: center;
+                margin-bottom: 4rem;
+                font-size: 1rem;
+            }
+
+            .main-text p:first-of-type {
+                text-align: justify;
+                max-width: 100%;
+                margin-bottom: 4rem;
+                font-size: 1rem;
+                line-height: 1.8;
+            }
+
+            .main-text p:last-of-type {
+                text-align: right;
+                max-width: 100%;
+                margin-bottom: 0;
+                font-size: 1rem;
+            }
+
+            /* КАРТОЧКИ ДНЕЙ — РАСШИРЕНЫ */
+            .day-card {
+                padding: 3rem 0;
+                max-width: 100%;
+            }
+
+            .day-title {
+                font-size: 1.1rem;
+                text-align: center;
+            }
+
+            .feature-list li {
+                font-size: 0.95rem;
+                line-height: 1.9;
+                text-align: justify;
+                max-width: 100%;
+            }
+
+            .price-value {
+                font-size: 1.1rem;
+            }
+
+            .info-card {
+                max-width: 100%;
+                margin: 6rem 0 6rem 0;
+            }
+
+            .final-vsyo {
+                font-size: 1.3rem;
+                margin-bottom: 5rem;
+                text-align: center;
+            }
+
+            .ticket-btn {
+                font-size: 0.85rem;
+                padding: 1rem 2rem;
+                min-width: 250px;
+            }
+
+            .footer {
+                font-size: 0.7rem;
             }
         }
     </style>
