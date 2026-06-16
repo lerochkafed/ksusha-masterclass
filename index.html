@@ -259,7 +259,6 @@
             letter-spacing: 0.1em;
         }
 
-        /* МОБИЛКИ — НЕ ТРОГАЕМ */
         @media (max-width: 550px) {
             .container {
                 padding: 1.5rem 1.2rem 3rem;
@@ -354,106 +353,15 @@
             }
         }
 
-        /* ДЕСКТОП — НЕОБЫЧНОЕ РАСПОЛОЖЕНИЕ ТОЛЬКО ДЛЯ ЭТИХ ДВУХ БЛОКОВ */
-        @media (min-width: 768px) {
-            .container {
-                max-width: 800px;
-                padding: 3rem 2rem 5rem;
-            }
-
+        @media (min-width: 551px) {
             .frame {
-                max-width: 80%;
-            }
-
-            /* ВСЕМ ПРИВЕТ — ПО ЦЕНТРУ */
-            .main-text .greeting {
-                text-align: center;
-                margin-bottom: 3rem;
-            }
-
-            /* ОСНОВНОЙ АБЗАЦ — ДВЕ КОЛОНКИ (НЕОБЫЧНО) */
-            .main-text p:first-of-type {
-                column-count: 2;
-                column-gap: 2rem;
-                text-align: justify;
-                margin-bottom: 2rem;
-            }
-
-            /* ФРАЗА — ПО ПРАВОМУ КРАЮ, С НЕОБЫЧНЫМ ОТСТУПОМ */
-            .main-text p:last-of-type {
-                text-align: right;
-                max-width: 70%;
-                margin-left: auto;
-                margin-right: 0;
-                margin-bottom: 0;
-                padding-top: 1rem;
-                border-top: 1px solid rgba(0, 0, 0, 0.1);
-            }
-
-            /* ОСТАЛЬНЫЕ ЭЛЕМЕНТЫ — ПО ЦЕНТРУ */
-            .day-card {
-                text-align: center;
-            }
-            .day-badge {
-                text-align: center;
-            }
-            .day-title {
-                text-align: center;
-            }
-            .feature-list li {
-                text-align: justify;
-                max-width: 85%;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .price-block {
-                text-align: center;
-            }
-            .price-value {
-                text-align: center;
-            }
-            .price-hint {
-                text-align: center;
-            }
-
-            .info-card {
-                text-align: center;
-            }
-            .info-label {
-                text-align: center;
-            }
-            .info-block p {
-                text-align: center;
-            }
-
-            .final-vsyo {
-                text-align: center;
-            }
-
-            .ticket-button-wrapper {
-                text-align: center;
-            }
-
-            .footer {
-                text-align: center;
+                max-width: 55%;
             }
         }
 
-        @media (min-width: 1024px) {
-            .container {
-                max-width: 900px;
-            }
+        @media (min-width: 768px) {
             .frame {
-                max-width: 70%;
-            }
-            .main-text p:first-of-type {
-                column-gap: 2.5rem;
-            }
-            .main-text p:last-of-type {
-                max-width: 60%;
-            }
-            .feature-list li {
-                max-width: 80%;
+                max-width: 50%;
             }
         }
     </style>
@@ -487,12 +395,12 @@
             <li>ОСОБЕННЫЙ И ОЧЕНЬ НАПОЛНЕННЫЙ ДЕНЬ,   В КОТОРОМ Я ПОКАЖУ ВАМ 2 СВОИХ САМЫХ ЛЮБИМЫХ МЕЙКА,   НО         В НАЧАЛЕ БУДЕТ ВАЖНЫЙ БЛОК ТЕОРИИ  С  ВОЗМОЖНОСТЬЮ ЗАДАВАТЬ ВОПРОСЫ</li>
             <li><strong>1.ТОТ САМЫЙ НЮД.</strong>   РАССКАЖУ ПРО ТО, КАК СДЕЛАТЬ КРАСИВУЮ КОЖУ,   ПРО АНАТОМИЮ ЛИЦА,   И          ВАЖНЫЕ МОМЕНТЫ В РАБОТЕ С КЛИЕНТОМ.      ПРО ОТЛИЧИЯ РАБОТЫ НА СЪЕМКАХ, НА СЦЕНЕ И В ЖИЗНИ,      А ТАКЖЕ ПРО ТО,   КАК ВЕДЕТ СЕБЯ МАКИЯЖ В ТЕ ИЛИ ИНЫЕ МОМЕНТЫ.</li>
             <li>ПОСЛЕ МЫ СДЕЛАЕМ ПЕРЕРЫВ НА КОФЕ ИЛИ ШАМПАНСКОЕ,  КТО ЧТО БОЛЬШЕ ЛЮБИТ  </li>
-            <li><strong>2.ПОКАЗ МОИХ ФИРМЕННЫХ СМОКИ, А ТАКЖЕ ИХ ТРАНСФОРМАЦИЯ.</strong>   ПОКАЖУ КАК ГУБЫ МОГУТ МЕНЯТЬ НАСТРОЕНИЕ В МАКИЯЖЕ.   РАССКАЖУ ПРО ТЕНДЕНЦИИ И КАК ИХ ОТСЛЕЖИВАТЬ,   ПРО ТО ГДЕ ИСКАТЬ КЛИЕНТОВ   И         РАБОТАТЬ НА КРУПНЫХ ПРОЕКТАХ.</li>
+            <li><strong>2.ПОКАЗ МОИХ ФИРМЕННЫХ СМОКИ, А ТАКЖЕ ИХ ТРАНСФОРМАЦИЯ.</strong>   ПОКАЖУ КАК ГУБЫ МОГУТ МЕНЯТЬ НАСТРОЕНИЕ В МАКИЯЖЕ.   РАССКАЖУ ПРО ТЕНДЕНЦИИ И КАК ИХ ОТСЛЕЖИВАТЬ,   ПРО ТО ГДЕ ИСКАТЬ КЛИЕНТОВ   И         РАБОТАТЬ НА КРУПНЫХ ПРОЕКТАХ.   А ЕЩЕ ВЫДЕЛИМ ВРЕМЯ НА ОБСУЖДЕНИЕ ВОЛОС!   РАССКАЖЕМ, КАК СОЗДАТЬ ОБЩИЙ ОБРАЗ ВМЕСТЕ С МЕЙКОМ  И   КАК ОНИ УСИЛИВАЮТ ДРУГ ДРУГА.</li>
             <li>В КОНЦЕ БУДЕТ ВРЕМЯ ДЛЯ ЛЮБЫХ ВАШИХ ВОПРОСОВ,      НО  Я С УДОВОЛЬСТВИЕМ БУДУ       ОТВЕЧАТЬ НА НИХ И ВО ВРЕМЯ МАСТЕР КЛАССА   (ЕСЛИ ОНИ БУДУТ ПО ТЕМЕ,  ЧТОБЫ Я НЕ ЗАПУТАЛАСЬ В МЫСЛЯХ  :))</li>
         </ul>
         <div class="price-block">
             <div class="price-value">25 000 ₽</div>
-            <div class="price-hint">ПРОДОЛЖИТЕЛЬНОСТЬ 5 ЧАСОВ</div>
+            <div class="price-hint">ПРОДОЛЖИТЕЛЬНОСТЬ 6 ЧАСОВ</div>
         </div>
     </div>
 
@@ -514,8 +422,8 @@
     <div class="info-card">
         <div class="info-label">МЕСТО И ВРЕМЯ</div>
         <div class="info-block">
-            <p>МЕСТО ПРОВЕДЕНИЯ:</p>
-            <p>ВРЕМЯ:</p>
+            <p>МОСКВА</p>
+            <p>13, 14 АВГУСТА</p>
         </div>
     </div>
 
