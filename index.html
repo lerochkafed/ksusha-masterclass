@@ -99,7 +99,7 @@
             margin-bottom: 4rem;
         }
 
-        .main-text p {
+        .main-text p:not(.format-intro) {
             text-align: justify;
             margin-bottom: 6rem;
         }
@@ -334,7 +334,7 @@
             .main-text .greeting {
                 margin-bottom: 2.5rem;
             }
-            .main-text p {
+            .main-text p:not(.format-intro) {
                 margin-bottom: 3rem;
             }
             .main-text .format-block {
@@ -475,20 +475,16 @@
                 margin-bottom: 3rem;
             }
 
-            .main-text p:nth-child(3) {
-                font-size: 1rem;
-                max-width: 100%;
-                margin-bottom: 2rem;
-            }
-
             .main-text .format-intro {
                 margin-top: 3rem;
                 margin-bottom: 0.5rem;
                 font-size: 1rem;
+                text-align: center;
             }
 
             .main-text .format-block {
                 margin-top: 3rem;
+                text-align: center;
             }
 
             .day-card {
