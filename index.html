@@ -81,7 +81,6 @@
         .price-hint,
         .info-block p,
         .info-label,
-        .final-vsyo,
         .footer {
             text-transform: uppercase;
         }
@@ -249,27 +248,31 @@
             letter-spacing: 0.1em;
         }
 
-        /* ФИНАЛЬНЫЙ БЛОК — ЖИРНЫМ ТОЛЬКО ПЕРВАЯ СТРОКА И ПОДПИСЬ */
+        /* ФИНАЛЬНЫЙ БЛОК */
         .final-vsyo {
-            font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            margin-bottom: 5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 1.7;
             color: #000000;
             text-align: center;
-            line-height: 1.8;
+            margin-bottom: 5rem;
         }
 
         .final-vsyo .highlight {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 1.2rem;
             font-weight: 900;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         .final-vsyo .signature {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 1.2rem;
             font-weight: 900;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 0.9rem;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
         }
 
         @media (max-width: 550px) {
@@ -348,11 +351,14 @@
             }
 
             .final-vsyo {
-                font-size: 0.9rem;
+                font-size: 0.65rem;
                 margin-bottom: 3rem;
             }
+            .final-vsyo .highlight {
+                font-size: 0.9rem;
+            }
             .final-vsyo .signature {
-                font-size: 0.7rem;
+                font-size: 0.9rem;
             }
 
             .ticket-button-wrapper {
@@ -459,8 +465,14 @@
             }
 
             .final-vsyo {
-                font-size: 1.3rem;
+                font-size: 1rem;
                 margin-bottom: 5rem;
+            }
+            .final-vsyo .highlight {
+                font-size: 1.3rem;
+            }
+            .final-vsyo .signature {
+                font-size: 1.3rem;
             }
 
             .ticket-btn {
@@ -541,7 +553,7 @@
     </div>
 
     <div class="final-vsyo">
-        <span class="highlight">ЭТОТ МАСТЕР КЛАСС —</span><br>
+        ЭТОТ МАСТЕР КЛАСС —<br>
         ПРО УВЕРЕННОСТЬ,<br>
         ПРО СПОКОЙСТВИЕ<br>
         И ПРО ВНУТРЕННЮЮ ОПОРУ.<br>
