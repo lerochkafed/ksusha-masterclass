@@ -112,9 +112,13 @@
             font-weight: 700;
         }
 
-        /* БЛОК С ВЫБОРОМ ФОРМАТА — УВЕЛИЧЕННЫЙ ОТСТУП В 2 РАЗА */
         .main-text .format-block {
-            margin-top: 6rem;
+            margin-top: 4rem;
+        }
+
+        .main-text .format-intro {
+            margin-top: 4rem;
+            margin-bottom: 1rem;
         }
 
         .day-card {
@@ -257,7 +261,7 @@
             letter-spacing: 0.1em;
         }
 
-        /* ФИНАЛЬНЫЙ БЛОК — ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
+        /* ФИНАЛЬНЫЙ БЛОК — ВЫРАВНИВАНИЕ ПО ШИРИНЕ, БЛОК ПО ЦЕНТРУ */
         .final-vsyo {
             font-size: 0.85rem;
             font-weight: 500;
@@ -266,6 +270,7 @@
             color: #000000;
             text-align: justify;
             margin-bottom: 3rem;
+            max-width: 100%;
         }
 
         .final-vsyo .highlight {
@@ -322,7 +327,11 @@
                 margin-bottom: 3rem;
             }
             .main-text .format-block {
-                margin-top: 3rem;
+                margin-top: 2.5rem;
+            }
+            .main-text .format-intro {
+                margin-top: 2.5rem;
+                margin-bottom: 0.5rem;
             }
 
             .day-card {
@@ -457,11 +466,17 @@
             .main-text p:nth-child(3) {
                 font-size: 1rem;
                 max-width: 100%;
-                margin-bottom: 3rem;
+                margin-bottom: 2rem;
+            }
+
+            .main-text .format-intro {
+                margin-top: 3rem;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
             }
 
             .main-text .format-block {
-                margin-top: 6rem;
+                margin-top: 3rem;
             }
 
             .day-card {
@@ -495,6 +510,7 @@
                 font-size: 1rem;
                 margin-bottom: 3rem;
                 line-height: 2.2;
+                max-width: 100%;
             }
             .final-vsyo .highlight {
                 font-size: 1.3rem;
@@ -542,7 +558,7 @@
 
         <p>ЭТО НЕ ПОТОКОВОЕ ОБУЧЕНИЕ И НЕ НАБОР ТЕХНИК.  ЭТО ФОРМАТ, В КОТОРОМ ВАЖНЫ ДЕТАЛИ, ПАУЗЫ И ВНИМАНИЕ.  Я ХОЧУ, ЧТОБЫ ВЫ ЧУВСТВОВАЛИ И ПОНИМАЛИ, ЧТО ДЕЛАЕТЕ.</p>
 
-        <p>Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
+        <p class="format-intro">Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
 
         <div class="format-block">
             <p><span class="highlight-days">ОДИН ДЕНЬ</span> — ВДОХНОВЕНИЕ И ПОНИМАНИЕ<br><span class="highlight-days">ИЛИ ДВА ДНЯ</span> — ГЛУБОКОЕ ПОГРУЖЕНИЕ И ПРАКТИКА.</p>
