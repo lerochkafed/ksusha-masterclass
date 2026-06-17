@@ -213,16 +213,6 @@
             text-align: center;
         }
 
-        .final-vsyo {
-            font-family: 'Inter', 'Helvetica Neue', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 900;
-            letter-spacing: 0.05em;
-            margin-bottom: 5rem;
-            color: #000000;
-            text-align: center;
-        }
-
         .ticket-button-wrapper {
             text-align: center;
             margin: 0 0 3rem 0;
@@ -257,6 +247,29 @@
             padding-top: 1.5rem;
             border-top: 0.5px solid rgba(0, 0, 0, 0.15);
             letter-spacing: 0.1em;
+        }
+
+        /* ФИНАЛЬНЫЙ БЛОК — ЖИРНЫМ ТОЛЬКО ПЕРВАЯ СТРОКА И ПОДПИСЬ */
+        .final-vsyo {
+            font-family: 'Inter', 'Helvetica Neue', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            margin-bottom: 5rem;
+            color: #000000;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .final-vsyo .highlight {
+            font-weight: 900;
+        }
+
+        .final-vsyo .signature {
+            font-weight: 900;
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.9rem;
+            letter-spacing: 0.08em;
         }
 
         @media (max-width: 550px) {
@@ -337,6 +350,9 @@
             .final-vsyo {
                 font-size: 0.9rem;
                 margin-bottom: 3rem;
+            }
+            .final-vsyo .signature {
+                font-size: 0.7rem;
             }
 
             .ticket-button-wrapper {
@@ -445,7 +461,6 @@
             .final-vsyo {
                 font-size: 1.3rem;
                 margin-bottom: 5rem;
-                text-align: center;
             }
 
             .ticket-btn {
@@ -525,7 +540,24 @@
         </div>
     </div>
 
-    <div class="final-vsyo">ЭТОТ МАСТЕР КЛАСС —<br>ПРО УВЕРЕННОСТЬ,<br>ПРО СПОКОЙСТВИЕ<br>И ПРО ВНУТРЕННЮЮ ОПОРУ.<br><br>ПЕРВЫЙ И ЕДИНСТВЕННЫЙ.<br><br>КОЛИЧЕСТВО МЕСТ СТРОГО ОГРАНИЧЕНО.<br><br>Я ПРИГОТОВИЛА КОЕ-ЧТО<br>ДЛЯ КАЖДОГО УЧАСТНИКА.<br>КАК ПРОДОЛЖЕНИЕ ЭТОГО СОСТОЯНИЯ.<br><br>С ЛЮБОВЬЮ,<br>КСЮША ГОЛАЙДА<br><br>ВСЁ.</div>
+    <div class="final-vsyo">
+        <span class="highlight">ЭТОТ МАСТЕР КЛАСС —</span><br>
+        ПРО УВЕРЕННОСТЬ,<br>
+        ПРО СПОКОЙСТВИЕ<br>
+        И ПРО ВНУТРЕННЮЮ ОПОРУ.<br>
+        <br>
+        ПЕРВЫЙ И ЕДИНСТВЕННЫЙ.<br>
+        <br>
+        КОЛИЧЕСТВО МЕСТ СТРОГО ОГРАНИЧЕНО.<br>
+        <br>
+        Я ПРИГОТОВИЛА КОЕ-ЧТО<br>
+        ДЛЯ КАЖДОГО УЧАСТНИКА.<br>
+        КАК ПРОДОЛЖЕНИЕ ЭТОГО СОСТОЯНИЯ.<br>
+        <br>
+        <span class="signature">С ЛЮБОВЬЮ,<br>КСЮША ГОЛАЙДА</span><br>
+        <br>
+        <span class="highlight">ВСЁ.</span>
+    </div>
 
     <div class="ticket-button-wrapper">
         <a href="https://qtickets.ru/event/ZAMENIT_NA_SSYLKU_KSYUSHI" target="_blank" class="ticket-btn">
