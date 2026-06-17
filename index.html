@@ -112,6 +112,11 @@
             font-weight: 700;
         }
 
+        /* БЛОК С ВЫБОРОМ ФОРМАТА — УВЕЛИЧЕННЫЙ ОТСТУП В 2 РАЗА */
+        .main-text .format-block {
+            margin-top: 6rem;
+        }
+
         .day-card {
             border-top: 1px solid rgba(0, 0, 0, 0.15);
             padding: 3rem 0;
@@ -252,14 +257,14 @@
             letter-spacing: 0.1em;
         }
 
-        /* ФИНАЛЬНЫЙ БЛОК */
+        /* ФИНАЛЬНЫЙ БЛОК — ВЫРАВНИВАНИЕ ПО ШИРИНЕ */
         .final-vsyo {
             font-size: 0.85rem;
             font-weight: 500;
             letter-spacing: 0.02em;
-            line-height: 1.7;
+            line-height: 2;
             color: #000000;
-            text-align: center;
+            text-align: justify;
             margin-bottom: 3rem;
         }
 
@@ -316,6 +321,9 @@
             .main-text p {
                 margin-bottom: 3rem;
             }
+            .main-text .format-block {
+                margin-top: 3rem;
+            }
 
             .day-card {
                 padding: 2rem 0;
@@ -359,6 +367,7 @@
             .final-vsyo {
                 font-size: 0.65rem;
                 margin-bottom: 2.5rem;
+                line-height: 1.8;
             }
             .final-vsyo .highlight {
                 font-size: 0.9rem;
@@ -439,7 +448,6 @@
                 line-height: 1.8;
             }
 
-            /* ЭТИ АБЗАЦЫ — ТАКОГО ЖЕ РАЗМЕРА, КАК ВЕСЬ ТЕКСТ */
             .main-text p:nth-child(2) {
                 font-size: 1rem;
                 max-width: 100%;
@@ -452,10 +460,8 @@
                 margin-bottom: 3rem;
             }
 
-            .main-text p:nth-child(4) {
-                font-size: 1rem;
-                max-width: 100%;
-                margin-bottom: 0;
+            .main-text .format-block {
+                margin-top: 6rem;
             }
 
             .day-card {
@@ -488,6 +494,7 @@
             .final-vsyo {
                 font-size: 1rem;
                 margin-bottom: 3rem;
+                line-height: 2.2;
             }
             .final-vsyo .highlight {
                 font-size: 1.3rem;
@@ -537,7 +544,9 @@
 
         <p>Я ПРЕДЛАГАЮ ВАМ ВЫБРАТЬ СВОЙ ФОРМАТ МАСТЕР КЛАССА:</p>
 
-        <p><span class="highlight-days">ОДИН ДЕНЬ</span> — ВДОХНОВЕНИЕ И ПОНИМАНИЕ<br><span class="highlight-days">ИЛИ ДВА ДНЯ</span> — ГЛУБОКОЕ ПОГРУЖЕНИЕ И ПРАКТИКА.</p>
+        <div class="format-block">
+            <p><span class="highlight-days">ОДИН ДЕНЬ</span> — ВДОХНОВЕНИЕ И ПОНИМАНИЕ<br><span class="highlight-days">ИЛИ ДВА ДНЯ</span> — ГЛУБОКОЕ ПОГРУЖЕНИЕ И ПРАКТИКА.</p>
+        </div>
     </div>
 
     <div class="day-card">
